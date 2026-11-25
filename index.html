@@ -1,1016 +1,706 @@
 <!doctype html>
-<html lang="es" class="sin-js">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Túnel de servicios KVRA</title>
-<meta name="description" content="Los servicios de KVRA en tecnología, marketing y eventos: un viaje por una galería de momentos, una parada por servicio.">
+<title>Servicios KVRA</title>
+<meta name="description" content="Los once servicios de KVRA en tecnología, marketing y eventos, cada uno con el trabajo real que lo demuestra.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="KVRA">
-<meta property="og:title" content="Túnel de servicios KVRA">
-<meta property="og:description" content="Los servicios de KVRA en tecnología, marketing y eventos: un viaje por una galería de momentos, una parada por servicio.">
+<meta property="og:title" content="Servicios KVRA">
+<meta property="og:description" content="Los once servicios de KVRA en tecnología, marketing y eventos, cada uno con el trabajo real que lo demuestra.">
 <meta property="og:url" content="https://jeandelamarkm-ui.github.io/kvra-tunel-web/">
-<meta property="og:image" content="https://jeandelamarkm-ui.github.io/kvra-tunel-web/assets/og.jpg">
+<meta property="og:image" content="https://jeandelamarkm-ui.github.io/kvra-tunel-web/assets/og-v3.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Portada del túnel de servicios de KVRA, con fotos de personas en el pasillo.">
+<meta property="og:image:alt" content="Portada de los servicios de KVRA: el nombre sobre un corredor de arcos de travertino.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0907'/%3E%3Crect x='5' y='5' width='6' height='6' fill='%23ff4a1c'/%3E%3C/svg%3E">
-<meta name="theme-color" content="#0b0907">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23F2EEE7'/%3E%3Ccircle cx='8' cy='8' r='3' fill='%23ff4a1c'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#F2EEE7">
+<script>document.documentElement.classList.add('js');if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('quieto');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link id="fuentes" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..400&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..400&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,200..600&display=swap">
 <style>
-/* v2 «Galería de momentos»: warm photos of people (the human side) inside a corridor of thin
-   lines, corner marks and mono labels (the technical side). KVRA orange kept from the partner's portfolio. */
 :root{
-  --paper:#0b0907; --paper-2:#16120e; --ink:#f4efe6; --ink-2:#a89f92;
-  --accent:#ff4a1c; --on-accent:#0b0907;
-  --rule:#f4efe629; --rule-strong:#f4efe666;
-  --serif:"Fraunces", "Iowan Old Style", Georgia, serif;
-  --font:"Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono:"Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  --gutter:clamp(1rem, 3.4vw, 3.4rem);
-  --top-h:3.5rem;
-  --abajo:6.4rem;
-  --ease:cubic-bezier(.2,.7,.1,1);
-  color-scheme:dark;
+  --papel:#F2EEE7;--papel-2:#E7E0D4;--tinta:#1A1917;--tinta-2:#625C54;--linea:rgba(26,25,23,.14);
+  --noche:#151412;--marfil:#F2EEE7;--acento:#FF4A1C;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --margen:clamp(16px,4.2vw,64px);--alto-barra:60px;
+  --curva:cubic-bezier(.2,.7,.2,1);
 }
-*,*::before,*::after{box-sizing:border-box}
-html,body{margin:0;background:var(--paper);color:var(--ink)}
-body{font-family:var(--font);font-size:1rem;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:var(--alto-barra);background:var(--papel);overflow-x:hidden;overflow-x:clip;scrollbar-gutter:stable}
+html.js:not(.quieto){scroll-behavior:smooth}
+html.con-dialogo{overflow:hidden}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--sans);font-size:1rem;line-height:1.55;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
+img,video{display:block;max-width:100%}
 a{color:inherit}
-button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.04em;font-size:.78rem;line-height:1.35}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+:focus-visible{outline:2px solid var(--tinta);outline-offset:3px}
+.fin :focus-visible,dialog.visor :focus-visible{outline-color:var(--marfil)}
+.oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.saltar{position:fixed;z-index:60;left:var(--margen);top:-4rem;background:var(--tinta);color:var(--marfil);padding:.7rem 1rem;text-decoration:none;font-size:.9rem}
+.saltar:focus{top:.6rem}
 
-/* ---------- the gallery (decorative; the same photos sit in each stop for readers without JS) ---------- */
-.galeria{position:fixed;inset:0;overflow:hidden;z-index:0;opacity:0;transition:opacity 1.4s var(--ease)}
-html.listo .galeria{opacity:1}
-.marco{position:absolute;left:0;top:0;transform-origin:0 0;visibility:hidden;will-change:transform,opacity;contain:layout style}
-.marco .img{position:absolute;inset:0;background:var(--paper-2) center/cover no-repeat;outline:1px solid var(--rule)}
-.marco .pie{position:absolute;left:0;top:100%;margin-top:.55rem;white-space:nowrap;color:var(--ink-2);font-size:11px}
-.marco .pie b{color:var(--accent);font-weight:500}
-.galeria.celular .heroe .pie{display:none}
-.marco.heroe .img{outline-color:var(--rule-strong)}
-.marco .scan{position:absolute;left:0;right:0;top:0;height:2px;background:var(--accent);opacity:0;box-shadow:0 0 18px 2px #ff4a1c88}
-.marco.mosaico .img{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:transparent;outline:0}
-.marco.mosaico .img i{background:var(--paper-2) center/cover no-repeat;outline:1px solid var(--rule)}
-.marco.mosaico .img i:last-child{grid-column:span 2}
-#lineas{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0;transition:opacity 1.4s var(--ease)}
-html.listo #lineas{opacity:1}
-.velo{position:fixed;inset:0;z-index:2;pointer-events:none;background:
-  linear-gradient(to bottom, rgba(11,9,7,.88) 0, rgba(11,9,7,0) calc(var(--top-h) + 3rem)),
-  linear-gradient(to right, rgba(11,9,7,.92) 0%, rgba(11,9,7,.78) 30%, rgba(11,9,7,0) 56%),
-  linear-gradient(to top, rgba(11,9,7,.9) 0%, rgba(11,9,7,0) 42%);transition:opacity .6s var(--ease)}
-html.viajando .velo{opacity:.35}
-.grano{position:fixed;inset:-50%;z-index:2;pointer-events:none;opacity:.07;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.lectura{position:fixed;left:50%;top:calc(var(--top-h) + env(safe-area-inset-top) + .4rem);z-index:4;transform:translateX(-50%);display:flex;align-items:baseline;gap:.9rem;white-space:nowrap;
-  opacity:0;transition:opacity .35s var(--ease);pointer-events:none}
-.lectura.activa{opacity:1}
-.lectura .mono{color:var(--ink-2);font-size:.68rem}
-.lectura .anio{font-family:var(--mono);font-size:1.25rem;letter-spacing:.08em;color:var(--accent);font-variant-numeric:tabular-nums}
-.sin-js .galeria,.sin-js #lineas,.sin-js .velo,.sin-js .grano,.sin-js .lectura{display:none}
+/* top bar */
+.barra{position:fixed;z-index:30;top:0;left:0;right:0;height:var(--alto-barra);display:flex;align-items:center;justify-content:space-between;
+  padding:0 var(--margen);background:var(--papel);border-bottom:1px solid var(--linea)}
+.marca{font-family:var(--serif);font-weight:400;font-size:1.2rem;letter-spacing:.36em;text-decoration:none;display:inline-flex;align-items:center}
+.marca::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--acento);margin-left:.1em}
+.barra nav{display:flex;align-items:center;gap:clamp(1.2rem,3vw,2.4rem)}
+.barra nav a{font:500 .72rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:.7rem 0}
+.barra nav a:hover{text-decoration:underline;text-underline-offset:.4em}
+.progreso{position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--tinta);transform:scaleX(0);transform-origin:0 50%}
 
-/* ---------- top bar ---------- */
-.barra{position:fixed;top:0;left:0;right:0;z-index:6;height:calc(var(--top-h) + env(safe-area-inset-top));
-  padding:env(safe-area-inset-top) var(--gutter) 0;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.barra .izq{display:flex;align-items:baseline;gap:.9rem}
-.marca{font-family:var(--mono);font-weight:500;font-size:1.05rem;letter-spacing:.22em;text-decoration:none}
-.barra .sub{color:var(--ink-2)}
-.grupos{display:flex;gap:1.4rem}
-.grupos a{position:relative;display:inline-flex;align-items:center;text-decoration:none;color:var(--ink-2);padding:.6rem 0}
-.grupos a:hover,.grupos a[aria-current="true"]{color:var(--ink)}
-.grupos a::before{content:"";position:absolute;left:-.85em;top:50%;width:.45em;height:.45em;margin-top:-.225em;background:var(--accent);transform:scale(0);transition:transform .45s var(--ease)}
-.grupos a[aria-current="true"]::before{transform:scale(1)}
+/* cover: the corridor */
+.portada{position:relative}
+.portada-fija{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
+  padding:calc(var(--alto-barra) + clamp(1.6rem,6vh,4.5rem)) var(--margen) var(--margen);overflow:hidden}
+.js:not(.quieto) .portada{height:220vh;height:220svh}
+.js:not(.quieto) .portada-fija{position:sticky;top:0;height:100vh;height:100lvh;min-height:0}
+.portada-texto{text-align:center;margin:0 auto clamp(1.4rem,4.5vh,3.2rem);max-width:46rem;position:relative;z-index:1}
+.sobre{font:500 .72rem/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--tinta-2);margin:0 0 clamp(.8rem,2.4vh,1.4rem)}
+.portada h1{font-family:var(--serif);font-weight:300;font-size:clamp(3.4rem,min(13vw,17vh),10rem);line-height:.86;letter-spacing:.16em;
+  margin:0 0 clamp(.9rem,2.8vh,1.7rem);padding-left:.16em}
+.portada .lead{font-size:clamp(1rem,.95rem + .35vw,1.22rem);line-height:1.5;color:var(--tinta-2);margin:0 auto;max-width:32rem}
+.portal{position:relative;flex:1 1 auto;min-height:30vh;overflow:hidden;transform-origin:50% 50%;z-index:2;background:var(--papel-2)}
+.portal-in{position:absolute;inset:0}
+.portal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.js:not(.quieto) .portal,.js:not(.quieto) .portal-in{will-change:transform}
 
-/* ---------- stops ---------- */
-.parada{padding:6rem var(--gutter) 4rem;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;border-bottom:1px solid var(--rule)}
-.js body{position:fixed;inset:0;overflow:hidden;overscroll-behavior:none}
-html.js{overscroll-behavior:none}
-.sin-js .barra{position:absolute}
-.js .parada{position:fixed;inset:0;min-height:0;border:0;z-index:3;visibility:hidden;pointer-events:none;
-  padding:calc(var(--top-h) + env(safe-area-inset-top) + 1rem) var(--gutter) calc(var(--abajo) + env(safe-area-inset-bottom))}
-.js .parada.activa{visibility:visible}
-.js .parada .contenido{pointer-events:auto}
-.contenido{max-width:min(40rem, 42vw)}
-.foto-plana{display:block;width:100%;max-width:44rem;height:auto;margin:0 0 1.5rem;outline:1px solid var(--rule)}
-.js .foto-plana{display:none}
-.etiqueta{display:flex;align-items:center;gap:.75rem;margin:0 0 .9rem;color:var(--ink-2)}
-.etiqueta .num{color:var(--ink)}
-.etiqueta .cuadro{width:.5rem;height:.5rem;background:var(--accent);flex:none}
-.titulo{font-family:var(--serif);font-weight:340;font-variation-settings:"opsz" 144;line-height:.98;letter-spacing:-.025em;
-  font-size:clamp(2.5rem, min(1rem + 4.6vw, 9.5vh), 6.2rem);margin:0 0 1.2rem;outline:none}
-.titulo em{font-style:italic;font-weight:300;color:#ffd9c6}
-.titulo .l{display:block;overflow:hidden;padding:.12em 0 .1em;margin:-.12em 0 -.1em}
-.titulo .l > span{display:block}
-.intro .titulo{font-family:var(--mono);font-weight:500;letter-spacing:.14em;font-size:clamp(4.2rem, min(1rem + 11vw, 20vh), 11rem);line-height:.9;margin-left:-.06em}
-.fin .titulo{font-size:clamp(3.4rem, min(1rem + 7vw, 15vh), 8.5rem)}
-.lead{font-size:clamp(1.02rem, .95rem + .4vw, 1.28rem);line-height:1.5;max-width:40ch;margin:0 0 1.2rem;color:#ece6dc}
-.incluye{list-style:none;margin:0 0 1.3rem;padding:0;display:flex;flex-direction:column;gap:.4rem;color:var(--ink-2)}
-.incluye li::before{content:"+";color:var(--accent);margin-right:.6em}
-.prueba{display:flex;flex-wrap:wrap;align-items:baseline;gap:.3rem 1rem;border-top:1px solid var(--rule);padding-top:.85rem;text-decoration:none}
-.prueba .mono{color:var(--ink-2);flex:none}
-.prueba .txt{font-size:.95rem}
-.prueba .flecha{color:var(--accent);margin-left:.35em}
-a.prueba:hover .txt,a.prueba:focus-visible .txt{text-decoration:underline;text-underline-offset:.22em;text-decoration-color:var(--accent)}
-.acciones{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.2rem}
-.pista,.nota{color:var(--ink-2)}
-.nota{margin-top:1.1rem;font-size:.68rem}
-.sin-js .pista{display:none}
-.pista .tactil{display:none}
-@media (hover:none){.pista .raton{display:none}.pista .tactil{display:inline}}
-.contacto{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem;border-top:1px solid var(--rule);padding-top:.85rem;margin:0 0 1.4rem}
-.contacto .mono{color:var(--ink-2)}
-.numero{font-size:1.05rem;text-decoration:none;font-variant-numeric:tabular-nums;border-bottom:1px solid var(--accent);padding-bottom:.08rem}
-.numero:hover{color:var(--accent)}
-.boton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;height:2.75rem;padding:0 1.1rem;border:1px solid var(--rule-strong);border-radius:0;background:transparent;
-  cursor:pointer;text-decoration:none;font-family:var(--mono);text-transform:uppercase;letter-spacing:.04em;font-size:.78rem;white-space:nowrap}
-.boton:hover{border-color:var(--ink)}
-.boton.lleno{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.boton.lleno:hover{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-.boton:disabled{opacity:.35;cursor:default;border-color:var(--rule-strong)}
+/* a stop */
+.parada{padding:clamp(4.5rem,13vh,9.5rem) var(--margen) clamp(3.5rem,10vh,7.5rem)}
+.parada + .parada{border-top:1px solid var(--linea)}
+.escena{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,6vw,7.5rem);align-items:center;max-width:1480px;margin:0 auto}
+.escena .ventana{order:2}
+.invertida .escena{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.invertida .escena .ventana{order:0}
+.invertida .escena .texto{order:1}
+.ventana{position:relative;margin:0;height:min(80vh,47vw);min-height:340px;overflow:hidden;background:var(--papel-2)}
+.ventana-in{position:absolute;inset:0}
+.ventana-in>img{width:100%;height:100%;object-fit:cover}
+.js:not(.quieto) .ventana{transform:scale(.8);will-change:transform}
+.js:not(.quieto) .ventana-in{transform:scale(1.35);will-change:transform}
+.capa{position:absolute;left:0;top:0;transform-origin:0 0;pointer-events:none}
+.capa video{position:absolute;left:0;top:0;transform-origin:0 0;object-fit:cover;opacity:0;transition:opacity .8s ease;background:#000}
+.capa video.vivo{opacity:1}
+.texto{max-width:34rem}
+.num{display:flex;align-items:baseline;gap:1rem;font:500 .72rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--tinta-2);margin:0 0 clamp(1.2rem,3vh,1.8rem)}
+.num b{font-family:var(--serif);font-weight:300;font-size:1.1rem;letter-spacing:.04em;color:var(--tinta)}
+.texto h2{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,1.3rem + 3.1vw,4.8rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(1.1rem,3vh,1.6rem)}
+.texto h2 em{display:block;font-style:italic;font-weight:300}
+.lead{font-size:clamp(1.02rem,.96rem + .25vw,1.14rem);line-height:1.62;margin:0 0 1.6rem}
+.incluye{list-style:none;margin:0 0 1.6rem;padding:0;border-top:1px solid var(--linea)}
+.incluye li{padding:.72rem 0;border-bottom:1px solid var(--linea);font-size:.94rem;color:var(--tinta-2)}
+.credito{font-size:.9rem;line-height:1.6;color:var(--tinta-2);margin:0}
+.credito a{color:var(--tinta);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.28em;white-space:nowrap}
 
-/* ---------- navigation ---------- */
-.riel{position:fixed;right:var(--gutter);top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;align-items:flex-end}
-.riel a{display:flex;align-items:center;gap:1.1rem;padding:.27rem 0;text-decoration:none;font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--ink-2)}
-.riel a:hover{color:var(--ink)}
-.riel a::after{content:"";width:.9rem;height:1px;background:var(--rule-strong);transform-origin:right center;transition:transform .45s var(--ease)}
-.riel a[aria-current="step"]{color:var(--ink)}
-.riel a[aria-current="step"]::after{background:var(--accent);transform:scaleX(2)}
-.riel .corte{height:.55rem}
-.controles{position:fixed;right:var(--gutter);bottom:calc(1.25rem + env(safe-area-inset-bottom));z-index:5;display:flex;gap:.5rem}
-.progreso{position:fixed;left:var(--gutter);right:var(--gutter);bottom:calc(4.7rem + env(safe-area-inset-bottom));z-index:5;display:none;gap:3px}
-.progreso i{flex:1;height:2px;background:var(--rule-strong)}
-.progreso i.hecho{background:var(--ink-2)}
-.progreso i.aqui{background:var(--accent)}
-.sin-js .riel,.sin-js .controles,.sin-js .progreso{display:none}
+/* reveal (only with JS and motion) */
+.js:not(.quieto) .texto>*,.js:not(.quieto) .muestras li,.js:not(.quieto) .muestras-titulo{opacity:0;transform:translate3d(0,22px,0);
+  transition:opacity 1s var(--curva),transform 1s var(--curva)}
+.js:not(.quieto) .visto>*,.js:not(.quieto) .visto li,.js:not(.quieto) .visto .muestras-titulo{opacity:1;transform:none}
+.js:not(.quieto) .texto.visto>:nth-child(2){transition-delay:.08s}
+.js:not(.quieto) .texto.visto>:nth-child(3){transition-delay:.16s}
+.js:not(.quieto) .texto.visto>:nth-child(4){transition-delay:.24s}
+.js:not(.quieto) .texto.visto>:nth-child(5){transition-delay:.32s}
+.js:not(.quieto) .muestras.visto li:nth-child(2){transition-delay:.07s}
+.js:not(.quieto) .muestras.visto li:nth-child(3){transition-delay:.14s}
+.js:not(.quieto) .muestras.visto li:nth-child(4){transition-delay:.21s}
+.js:not(.quieto) .muestras.visto li:nth-child(n+5){transition-delay:.28s}
 
+/* real work from the portfolio */
+.muestras{max-width:1480px;margin:clamp(3.2rem,9vh,6rem) auto 0}
+.muestras-titulo{display:flex;justify-content:space-between;gap:1rem;font:500 .72rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;
+  color:var(--tinta-2);margin:0 0 1.4rem;padding-bottom:1rem;border-bottom:1px solid var(--linea)}
+.muestras ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(var(--cols,4),minmax(0,1fr));gap:2.2rem 1.4rem}
+@media (min-width:900px) and (max-width:1199px){.muestras ul{grid-template-columns:repeat(var(--cols-m,3),minmax(0,1fr))}}
+a.muestra{display:block;text-decoration:none}
+.vitrina{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:var(--papel-2);padding:9%;overflow:hidden}
+.vitrina img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;
+  box-shadow:0 1px 2px rgba(26,25,23,.08),0 10px 26px -14px rgba(26,25,23,.35);transition:transform .7s var(--curva)}
+a.muestra:hover .vitrina img,a.muestra:focus-visible .vitrina img{transform:scale(1.035)}
+.reproducir{position:absolute;right:.7rem;bottom:.7rem;width:2.2rem;height:2.2rem;border-radius:50%;background:rgba(242,238,231,.94);
+  display:grid;place-items:center;box-shadow:0 2px 10px rgba(26,25,23,.18)}
+.reproducir::before{content:"";border-left:.56rem solid var(--tinta);border-top:.36rem solid transparent;border-bottom:.36rem solid transparent;margin-left:.16rem}
+.leyenda{display:block;margin-top:.85rem;font-size:.88rem;line-height:1.5;color:var(--tinta-2)}
+.leyenda b{display:block;font-weight:500;color:var(--tinta);margin-bottom:.15rem}
+
+/* closing */
+.fin{background:var(--noche);color:var(--marfil);text-align:center;padding:clamp(6rem,18vh,12rem) var(--margen) 2.4rem}
+.fin h2{font-family:var(--serif);font-weight:300;font-size:clamp(3.2rem,2rem + 5vw,7.4rem);line-height:1;letter-spacing:-.02em;margin:0 0 1.4rem}
+.fin .lead{color:rgba(242,238,231,.78);max-width:30rem;margin:0 auto 2.6rem}
+.numero{display:inline-block;font-family:var(--serif);font-weight:300;font-size:clamp(1.7rem,1.2rem + 1.7vw,2.7rem);text-decoration:none;letter-spacing:.02em;margin:0 0 2rem}
+.numero:hover{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px}
+.boton{display:inline-flex;align-items:center;gap:.6rem;padding:1.05rem 1.7rem;border:1px solid currentColor;text-decoration:none;
+  font:500 .76rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.boton.lleno{background:var(--marfil);color:var(--noche);border-color:var(--marfil)}
+.boton.lleno:hover{background:transparent;color:var(--marfil)}
+.secundario{display:inline-block;margin-top:1.8rem;font-size:.92rem;color:rgba(242,238,231,.75);text-underline-offset:.28em}
+.pie{max-width:1480px;margin:clamp(4.5rem,13vh,8rem) auto 0;padding-top:1.4rem;border-top:1px solid rgba(242,238,231,.16);font-size:.8rem;line-height:1.55;
+  color:rgba(242,238,231,.62);display:flex;justify-content:space-between;gap:.8rem 2rem;flex-wrap:wrap;text-align:left}
+.pie span:last-child{max-width:40rem}
+
+/* viewer */
+dialog{color:inherit}
+dialog.visor{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#121110;color:var(--marfil);overscroll-behavior:contain}
+dialog.visor::backdrop{background:#121110}
+.visor-caja{height:100%;display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.visor-arriba{display:flex;justify-content:space-between;align-items:center;padding:.9rem var(--margen)}
+.visor-cuenta{font:500 .72rem/1 var(--sans);letter-spacing:.2em;color:rgba(242,238,231,.7)}
+.visor-medio{display:flex;align-items:center;justify-content:center;padding:0 var(--margen);min-height:0}
+.visor-medio img,.visor-medio video{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#000}
+.visor-abajo{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:1rem;align-items:center;padding:1rem var(--margen) max(1.2rem,env(safe-area-inset-bottom))}
+.visor-texto{text-align:center}
+.visor-leyenda{font-size:.92rem;line-height:1.5;color:rgba(242,238,231,.74);max-width:40rem;margin:0 auto .5rem}
+.visor-leyenda b{display:block;color:var(--marfil);font-weight:500}
+.visor-caso{font-size:.82rem;color:rgba(242,238,231,.74);text-underline-offset:.28em}
+.visor button,.indice button{background:none;border:1px solid rgba(242,238,231,.3);color:inherit;font:500 .72rem/1 var(--sans);letter-spacing:.16em;
+  text-transform:uppercase;padding:.85rem 1.05rem;cursor:pointer;min-width:2.9rem;min-height:2.9rem}
+.visor button:hover{border-color:var(--marfil)}
+.visor button[disabled]{visibility:hidden}
+
+/* index */
+dialog.indice{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--papel);color:var(--tinta)}
+dialog.indice::backdrop{background:var(--papel)}
+.indice-caja{min-height:100%;padding:0 var(--margen) 2.4rem;display:flex;flex-direction:column}
+.indice-arriba{display:flex;justify-content:space-between;align-items:center;height:var(--alto-barra);border-bottom:1px solid var(--linea)}
+.indice-arriba p{margin:0;font:500 .72rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase}
+.indice button{border-color:var(--linea)}
+.indice-lista{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem 3rem;max-width:1480px;width:100%;margin:clamp(2rem,8vh,5rem) auto 0}
+.indice-grupo>p{font:500 .72rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--tinta-2);margin:0 0 1rem}
+.indice-grupo ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
+.indice-grupo a{display:flex;gap:1rem;align-items:baseline;padding:.85rem 0;border-bottom:1px solid var(--linea);text-decoration:none;
+  font-family:var(--serif);font-weight:300;font-size:clamp(1.25rem,1rem + .8vw,1.7rem);line-height:1.2}
+.indice-grupo a b{font-family:var(--sans);font-weight:500;font-size:.72rem;letter-spacing:.14em;color:var(--tinta-2)}
+.indice-grupo a:hover{font-style:italic}
+
+/* phones and narrow windows */
 @media (max-width:899px){
-  .contenido{max-width:none}
-  .riel{display:none}
-  .barra .sub{display:none}
-  .grupos{gap:1rem}
-  .grupos a{font-size:.66rem}
-  .progreso{display:flex}
-  .controles{left:var(--gutter);right:var(--gutter)}
-  .controles .boton{flex:1}
-  .velo{background:linear-gradient(to bottom, rgba(11,9,7,.88) 0, rgba(11,9,7,0) calc(var(--top-h) + 2rem)),linear-gradient(to top, rgba(11,9,7,.97) 0%, rgba(11,9,7,.9) 40%, rgba(11,9,7,.35) 55%, rgba(11,9,7,0) 64%)}
-  .titulo{font-size:clamp(2.1rem, 9.5vw, 3.2rem)}
-  .intro .titulo{font-size:clamp(3.6rem, 19vw, 6rem)}
-  .fin .titulo{font-size:clamp(3rem, 15vw, 4.6rem)}
-  .incluye{flex-direction:row;flex-wrap:wrap;gap:.4rem 1.2rem}
-  .lectura{gap:.6rem}
+  .escena,.invertida .escena{grid-template-columns:minmax(0,1fr);gap:clamp(1.8rem,5vh,2.6rem)}
+  .escena .ventana,.invertida .escena .ventana{order:0}
+  .escena .texto,.invertida .escena .texto{order:1}
+  .ventana{height:min(100vw,62vh);min-height:0;margin:0 calc(var(--margen) * -1)}
+  .parada{padding-top:clamp(3rem,9vh,5rem)}
+  .texto h2{font-size:clamp(2.3rem,10.5vw,3.5rem)}
+  .muestras ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem .9rem}
+  .vitrina{padding:8%}
+  .leyenda{font-size:.82rem;margin-top:.65rem}
+  .reproducir{width:1.9rem;height:1.9rem;right:.5rem;bottom:.5rem}
+  .indice-lista{grid-template-columns:minmax(0,1fr);gap:1.8rem;margin-top:1.6rem}
+  .visor-abajo{grid-template-columns:auto minmax(0,1fr) auto;gap:.6rem}
+  .visor-leyenda{font-size:.86rem}
+}
+@media (max-width:899px) and (max-height:560px){
+  .ventana{height:78vh}
+}
+/* short landscape screens: smaller cover text so the corridor keeps room */
+@media (max-height:560px){
+  .portada h1{font-size:clamp(2.6rem,15vh,5rem)}
+  .sobre{display:none}
+  .portada-fija{padding-top:calc(var(--alto-barra) + 1rem)}
+  .portada-texto{margin-bottom:1rem}
 }
 @media (max-width:359px){
-  .grupos{gap:.8rem}
-  .grupos a{font-size:.6rem}
-  .marca{letter-spacing:.16em}
-}
-/* short laptop windows: less text so the stop's label never slides under the top bar */
-@media (min-width:900px) and (min-height:541px) and (max-height:700px){
-  .incluye{display:none}
-  .titulo{font-size:clamp(2.2rem, 8.5vh, 3.6rem)}
-  .riel a{padding:.18rem 0}
-}
-/* phones in a browser with its bars showing are often only 640-760 px tall: less text, so the photo keeps its room */
-@media (max-width:899px) and (min-height:541px) and (max-height:760px){
-  :root{--abajo:5.2rem}
-  .progreso{display:none}
-  .incluye{display:none}
-  .etiqueta{margin-bottom:.6rem}
-  .titulo{font-size:clamp(2rem, 9vw, 2.9rem);margin-bottom:.8rem}
-  .lead{font-size:.98rem;margin-bottom:.9rem}
-  .nota{margin-top:.8rem}
-}
-/* any screen 540 px tall or less (phones held sideways, of any width) */
-@media (max-height:540px){
-  :root{--abajo:1.4rem;--top-h:3.1rem}
-  .riel{display:none}
-  .fin .titulo{font-size:clamp(2rem, 12vh, 3.2rem)}
-  .fin .contenido{max-width:calc(100vw - 2 * var(--gutter) - 7.5rem)}
-  .contacto{padding-top:.6rem;margin-bottom:.8rem}
-  .acciones{gap:.6rem .75rem}
-  .acciones .boton{height:2.4rem;padding:0 .85rem;font-size:.7rem}
-  .titulo{font-size:clamp(1.7rem, 9.5vh, 2.6rem);margin-bottom:.55rem}
-  .intro .titulo{font-size:clamp(2.8rem, 20vh, 5rem)}
-  .etiqueta{margin-bottom:.45rem}
-  .contenido{max-width:min(54vw, calc(100vw - 2 * var(--gutter) - 7.5rem))}
-  .lead{font-size:.92rem;margin-bottom:.6rem}
-  .incluye,.pista,.nota{display:none}
-  .prueba{padding-top:.5rem}
-  .progreso{display:none}
-  .controles{left:auto;right:var(--gutter);bottom:calc(1rem + env(safe-area-inset-bottom))}
-  .controles .boton{flex:none;width:2.75rem;padding:0}
-  .controles .txt{display:none}
-  .velo{background:linear-gradient(to bottom, rgba(11,9,7,.88) 0, rgba(11,9,7,0) calc(var(--top-h) + 1.5rem)),linear-gradient(to right, rgba(11,9,7,.95) 0%, rgba(11,9,7,.8) 45%, rgba(11,9,7,0) 66%)}
-  .lectura{display:none}
+  .barra nav{gap:1rem}
+  .marca{letter-spacing:.26em}
 }
 @media (prefers-reduced-motion:reduce){
-  .galeria,#lineas{transition:none}
-  .lectura{display:none}
+  *,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+
 </style>
 </head>
 <body>
-<div class="galeria" aria-hidden="true"></div>
-<canvas id="lineas" aria-hidden="true"></canvas>
-<div class="velo" aria-hidden="true"></div>
-<div class="grano" aria-hidden="true"></div>
-<div class="lectura" aria-hidden="true"><span class="mono">Viaje en el tiempo</span><span class="anio">2026</span><span class="mono destino">&rarr; 01 / 11</span></div>
-
+<a class="saltar" href="#p01">Ir al primer servicio</a>
 <header class="barra">
-  <div class="izq"><a class="marca" href="#inicio" data-ir="0" aria-label="KVRA, volver al inicio">KVRA</a><span class="mono sub">Túnel de servicios</span></div>
-  <nav class="grupos mono" aria-label="Grupos de servicios">
-    <a href="#01" data-ir="1" data-grupo="tecnologia">Tecnología</a>
-    <a href="#07" data-ir="7" data-grupo="marketing">Marketing</a>
-    <a href="#11" data-ir="11" data-grupo="eventos">Eventos</a>
+  <a class="marca" href="#inicio" aria-label="KVRA, volver al inicio">KVRA</a>
+  <nav aria-label="Principal">
+    <a class="abrir-indice" href="#p01" aria-haspopup="dialog">Índice</a>
+    <a href="https://wa.me/573006746770?text=Hola%2C%20vi%20los%20servicios%20de%20KVRA%20y%20quiero%20hablar." target="_blank" rel="noopener">WhatsApp<span class="oculto"> (se abre en otra pestaña)</span></a>
   </nav>
+  <span class="progreso" aria-hidden="true"></span>
 </header>
-
 <main>
-  <section class="parada intro" id="inicio" data-anuncio="Inicio. KVRA, túnel de servicios." aria-labelledby="t-inicio">
-    <div class="contenido">
-      <p class="etiqueta mono"><span class="cuadro"></span>Túnel de servicios</p>
-      <h1 class="titulo" id="t-inicio" tabindex="-1"><span class="l"><span>KVRA</span></span></h1>
-      <p class="lead">Once servicios de tecnología, marketing y eventos. Cada uno es una parada de este viaje.</p>
-      <div class="acciones">
-        <a class="boton lleno" href="#01" data-ir="1">Entrar al túnel <span aria-hidden="true">&darr;</span></a>
-        <span class="pista mono"><span class="raton">Baja con la rueda o usa las flechas</span><span class="tactil">Desliza hacia arriba</span></span>
+  <section class="portada" id="inicio" aria-labelledby="t-inicio">
+    <div class="portada-fija">
+      <div class="portada-texto">
+        <p class="sobre">Tecnología · Marketing · Eventos</p>
+        <h1 id="t-inicio">KVRA</h1>
+        <p class="lead">Once servicios, cada uno con el trabajo real que lo demuestra. Baja para recorrerlos.</p>
       </div>
-      <p class="nota mono">Fotos de ambiente hechas con inteligencia artificial</p>
+      <div class="portal"><div class="portal-in">
+        <picture>
+          <source media="(max-aspect-ratio: 3/4)" srcset="assets/v3/corredor-alto-900.webp 900w, assets/v3/corredor-alto-1600.webp 1600w" sizes="100vw">
+          <img src="assets/v3/corredor-ancho-1600.webp" srcset="assets/v3/corredor-ancho-900.webp 900w, assets/v3/corredor-ancho-1600.webp 1600w, assets/v3/corredor-ancho-2400.webp 2400w" sizes="100vw" width="1600" height="893" alt="Un corredor de arcos de travertino con luz de mañana que termina en una abertura hacia el mar." fetchpriority="high" decoding="async">
+        </picture>
+      </div></div>
     </div>
   </section>
 
-  <section class="parada" id="01" data-grupo="tecnologia" data-corto="Apps con IA" data-foto="assets/fotos/01-apps-ia.webp" data-anuncio="Parada 1 de 11: apps con inteligencia artificial." aria-labelledby="t-01">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/01-apps-ia.webp" alt="Una mujer en un balcón con plantas se ríe mientras le habla a su celular." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">01 / 11</span><span class="cuadro"></span>Tecnología</p>
-      <h2 class="titulo" id="t-01" tabindex="-1"><span class="l"><span>Apps con</span></span><span class="l"><span><em>inteligencia artificial</em></span></span></h2>
-      <p class="lead">Asistentes que te escuchan, buscan el dato en vivo y te responden en voz alta. También actúan en el teléfono: ponen música o abren una app.</p>
-      <ul class="incluye mono"><li>Voz en tiempo real</li><li>Memoria de cada usuario</li><li>Hechas con Gemini y Claude</li></ul>
-      <a class="prueba" href="https://jerickcastro.pages.dev/work/hey-eva/" target="_blank" rel="noopener"><span class="mono">En el portafolio</span><span class="txt">Hey Eva, compañera de voz con IA, en App Store y Google Play<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada" id="02" data-grupo="tecnologia" data-corto="Apps móviles" data-foto="assets/fotos/02-apps-moviles.webp" data-anuncio="Parada 2 de 11: apps para iPhone y Android." aria-labelledby="t-02">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/02-apps-moviles.webp" alt="Un joven prueba una app en dos teléfonos sobre una mesa de madera junto a la ventana." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">02 / 11</span><span class="cuadro"></span>Tecnología</p>
-      <h2 class="titulo" id="t-02" tabindex="-1"><span class="l"><span>Apps para</span></span><span class="l"><span><em>iPhone y Android</em></span></span></h2>
-      <p class="lead">Una sola app para las dos tiendas, con inicio de sesión con Apple o Google, suscripciones y pagos dentro de la app.</p>
-      <ul class="incluye mono"><li>Diseño fiel a tu Figma</li><li>Suscripciones y compras</li><li>Publicación en las tiendas</li></ul>
-      <a class="prueba" href="https://jerickcastro.pages.dev/work/hey-eva/" target="_blank" rel="noopener"><span class="mono">En el portafolio</span><span class="txt">Hey Eva: Flutter con partes nativas en Swift y Kotlin<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada" id="03" data-grupo="tecnologia" data-corto="Web y tiendas" data-foto="assets/fotos/03-web-tiendas.webp" data-anuncio="Parada 3 de 11: páginas web y tiendas en línea." aria-labelledby="t-03">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/03-web-tiendas.webp" alt="La dueña de una tienda de ropa empaca un pedido junto a su computador." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">03 / 11</span><span class="cuadro"></span>Tecnología</p>
-      <h2 class="titulo" id="t-03" tabindex="-1"><span class="l"><span>Páginas web</span></span><span class="l"><span><em>y tiendas en línea</em></span></span></h2>
-      <p class="lead">Sitios para marcas, hoteles, inmobiliarias y universidades, y tiendas que cobran en línea o reciben el pedido por WhatsApp.</p>
-      <ul class="incluye mono"><li>Editor para cambiar textos y fotos</li><li>Pagos con Wompi, Bold o Mercado Pago</li><li>Píxel de Meta y Google Analytics</li></ul>
-      <a class="prueba" href="https://jerickcastro.pages.dev/work/delamark/" target="_blank" rel="noopener"><span class="mono">En el portafolio</span><span class="txt">Delamark: marca y tienda en línea, de cero a publicada en 10 h 43 min de trabajo<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada" id="04" data-grupo="tecnologia" data-corto="Boletas y pagos" data-foto="assets/fotos/04-boletas.webp" data-anuncio="Parada 4 de 11: venta de boletas y pagos en línea." aria-labelledby="t-04">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/04-boletas.webp" alt="En la entrada de una fiesta al aire libre, un joven muestra su boleta en el celular para que se la lean." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">04 / 11</span><span class="cuadro"></span>Tecnología</p>
-      <h2 class="titulo" id="t-04" tabindex="-1"><span class="l"><span>Venta de boletas</span></span><span class="l"><span><em>y pagos en línea</em></span></span></h2>
-      <p class="lead">Cartelera de eventos, pago en línea y boleta con código QR, con un panel para ver cada venta.</p>
-      <ul class="incluye mono"><li>Pagos con Wompi</li><li>Boletas con código QR</li><li>Panel de ventas</li></ul>
-      <a class="prueba" href="https://jerickcastro.pages.dev/work/dlamark-productions/" target="_blank" rel="noopener"><span class="mono">En el portafolio</span><span class="txt">D'Lamark Productions vende boletas de verdad desde el 22 de octubre de 2026<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada" id="05" data-grupo="tecnologia" data-corto="Automatización" data-foto="assets/fotos/05-automatizacion.webp" data-anuncio="Parada 5 de 11: automatización y agentes de IA." aria-labelledby="t-05">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/05-automatizacion.webp" alt="Un hombre con un café revisa su computador en su oficina en casa." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">05 / 11</span><span class="cuadro"></span>Tecnología</p>
-      <h2 class="titulo" id="t-05" tabindex="-1"><span class="l"><span>Automatización</span></span><span class="l"><span><em>y agentes de IA</em></span></span></h2>
-      <p class="lead">Agentes de IA que hacen el trabajo repetido de tu negocio, como responder mensajes, ordenar datos o armar reportes. Una persona aprueba antes de que algo salga.</p>
-      <ul class="incluye mono"><li>Agentes con Claude y Gemini</li><li>Conexión con WhatsApp y tus programas</li><li>Aprobación humana antes de enviar</li></ul>
-      <a class="prueba" href="https://jerickcastro.pages.dev/work/kvra-orquesta/" target="_blank" rel="noopener"><span class="mono">En el portafolio</span><span class="txt">KVRA Orquesta, el sistema de agentes que el equipo de KVRA usa cada día<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada" id="06" data-grupo="tecnologia" data-corto="Software a la medida" data-foto="assets/fotos/06-software.webp" data-anuncio="Parada 6 de 11: software a la medida." aria-labelledby="t-06">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/06-software.webp" alt="En un taller de muebles, una mujer revisa el inventario en una tableta mientras un carpintero trabaja la madera." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">06 / 11</span><span class="cuadro"></span>Tecnología</p>
-      <h2 class="titulo" id="t-06" tabindex="-1"><span class="l"><span>Software</span></span><span class="l"><span><em>a la medida</em></span></span></h2>
-      <p class="lead">Programas hechos para la forma en que trabaja tu empresa: inventario, ventas, contabilidad y pedidos en un mismo lugar.</p>
-      <ul class="incluye mono"><li>ERP y contabilidad</li><li>Conexión con tu punto de venta</li><li>Pruebas automáticas en cada entrega</li></ul>
-      <a class="prueba" href="https://jerickcastro.pages.dev/about/" target="_blank" rel="noopener"><span class="mono">En el portafolio</span><span class="txt">Un ERP y sistema contable para una fábrica de muebles, en uso diario desde hace meses<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada" id="07" data-grupo="marketing" data-corto="Pauta en Meta Ads" data-foto="assets/fotos/07-pauta.webp" data-anuncio="Parada 7 de 11: pauta en Meta Ads." aria-labelledby="t-07">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/07-pauta.webp" alt="Una artesana con una mochila tejida en las piernas sonríe al ver mensajes nuevos en su celular." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">07 / 11</span><span class="cuadro"></span>Marketing</p>
-      <h2 class="titulo" id="t-07" tabindex="-1"><span class="l"><span>Pauta en</span></span><span class="l"><span><em>Meta Ads</em></span></span></h2>
-      <p class="lead">Campañas en Instagram y Facebook que llevan a la gente a tu WhatsApp o a tu tienda. Tú apruebas cada anuncio y el presupuesto antes de que salga.</p>
-      <ul class="incluye mono"><li>Campañas a WhatsApp o a tu tienda</li><li>Revisión el día 3 y el día 7</li><li>Informe en pesos y en dólares</li></ul>
-    </div>
-  </section>
-
-  <section class="parada" id="08" data-grupo="marketing" data-corto="Contenido" data-foto="assets/fotos/08-contenido.webp" data-anuncio="Parada 8 de 11: contenido para redes." aria-labelledby="t-08">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/08-contenido.webp" alt="Un joven graba un video con su celular en un trípode, explicando algo con una gran sonrisa." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">08 / 11</span><span class="cuadro"></span>Marketing</p>
-      <h2 class="titulo" id="t-08" tabindex="-1"><span class="l"><span>Contenido</span></span><span class="l"><span><em>para redes</em></span></span></h2>
-      <p class="lead">Guiones listos para grabar, reels y carruseles con su calendario del mes. Cada pieza termina con una sola invitación: escribirte.</p>
-      <ul class="incluye mono"><li>Guiones segundo a segundo</li><li>Calendario mensual</li><li>Carruseles e historias</li></ul>
-    </div>
-  </section>
-
-  <section class="parada" id="09" data-grupo="marketing" data-corto="Edición de video" data-foto="assets/fotos/09-video.webp" data-anuncio="Parada 9 de 11: edición de video y video con IA." aria-labelledby="t-09">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/09-video.webp" alt="Dos personas se ríen frente a un monitor en una sala de edición en penumbra." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">09 / 11</span><span class="cuadro"></span>Marketing</p>
-      <h2 class="titulo" id="t-09" tabindex="-1"><span class="l"><span>Edición de video</span></span><span class="l"><span><em>y video con IA</em></span></span></h2>
-      <p class="lead">Reels y anuncios cortados al ritmo de la música, con títulos animados, el cierre con tu logo y música original hecha para cada pieza.</p>
-      <ul class="incluye mono"><li>Edición de reels y anuncios</li><li>Animación de tu logo</li><li>Escenas y música hechas con IA</li></ul>
-    </div>
-  </section>
-
-  <section class="parada" id="10" data-grupo="marketing" data-corto="Flyers y fotos" data-foto="assets/fotos/10-diseno.webp" data-anuncio="Parada 10 de 11: flyers, marca y fotos con IA." aria-labelledby="t-10">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/10-diseno.webp" alt="Una sesión de fotos de producto: un fotógrafo retrata unas sandalias mientras su asistente sostiene un reflector." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">10 / 11</span><span class="cuadro"></span>Marketing</p>
-      <h2 class="titulo" id="t-10" tabindex="-1"><span class="l"><span>Flyers, marca</span></span><span class="l"><span><em>y fotos con IA</em></span></span></h2>
-      <p class="lead">Flyers para post e historia, logo e identidad de marca, y fotos de tus productos con modelos, hechas con IA a partir de tus propias fotos.</p>
-      <ul class="incluye mono"><li>Flyers de eventos</li><li>Logo e identidad</li><li>Fotos de producto con modelos</li></ul>
-    </div>
-  </section>
-
-  <section class="parada" id="11" data-grupo="eventos" data-corto="Eventos" data-foto="assets/fotos/11-eventos.webp" data-anuncio="Parada 11 de 11: producción de eventos." aria-labelledby="t-11">
-    <div class="contenido">
-      <img class="foto-plana" src="assets/fotos/11-eventos.webp" alt="Gente bailando con las manos arriba frente a una banda de vallenato, en una fiesta en la playa al atardecer." width="1264" height="848" loading="lazy">
-      <p class="etiqueta mono"><span class="num">11 / 11</span><span class="cuadro"></span>Eventos</p>
-      <h2 class="titulo" id="t-11" tabindex="-1"><span class="l"><span>Producción</span></span><span class="l"><span><em>de eventos</em></span></span></h2>
-      <p class="lead">Fiestas con una historia detrás: el concepto, el guion de la noche, el minuto a minuto, el presupuesto y la venta de boletas.</p>
-      <ul class="incluye mono"><li>Concepto e historia</li><li>Minuto a minuto y guion del presentador</li><li>Presupuesto en pesos y dólares</li></ul>
-      <a class="prueba" href="https://dlamark.com" target="_blank" rel="noopener"><span class="mono">Sitio</span><span class="txt">D'Lamark Productions, eventos en Barranquilla<span class="flecha" aria-hidden="true">&nearr;</span></span></a>
-    </div>
-  </section>
-
-  <section class="parada fin" id="fin" data-anuncio="Fin del viaje. Hablemos." aria-labelledby="t-fin">
-    <div class="contenido">
-      <p class="etiqueta mono"><span class="cuadro"></span>Fin del viaje · 11 paradas</p>
-      <h2 class="titulo" id="t-fin" tabindex="-1"><span class="l"><span>Hablemos</span></span></h2>
-      <p class="lead">Cuéntanos qué necesitas y te decimos por cuál parada empezar.</p>
-      <p class="contacto"><span class="mono">WhatsApp</span><a class="numero" href="https://wa.me/573006746770?text=Hola%2C%20vi%20los%20servicios%20de%20KVRA%20y%20quiero%20hablar." target="_blank" rel="noopener">+57 300 674 6770</a></p>
-      <div class="acciones">
-        <a class="boton lleno" href="https://wa.me/573006746770?text=Hola%2C%20vi%20los%20servicios%20de%20KVRA%20y%20quiero%20hablar." target="_blank" rel="noopener">Escríbenos por WhatsApp <span aria-hidden="true">&nearr;</span></a>
-        <a class="boton" href="#inicio" data-ir="0"><span aria-hidden="true">&#8634;</span> Volver al inicio</a>
-        <a class="boton" href="https://jerickcastro.pages.dev/" target="_blank" rel="noopener">Portafolio técnico <span aria-hidden="true">&nearr;</span></a>
+  <section class="parada" id="p01" aria-labelledby="t-01">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/01-1600.webp" srcset="assets/v3/01-900.webp 900w, assets/v3/01-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Un teléfono apoyado en un bloque de travertino frente a una cortina de lino; en la pantalla, la app Hey Eva." loading="eager" decoding="async">
+        <div class="capa" data-lado="2048" style="width:2048px;height:2048px"><video muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1" data-src="assets/portafolio/eva-demo.mp4" data-quad="[[823.1, 781.2], [1232.4, 780.1], [1235.7, 1678.0], [825.3, 1678.8]]" data-w="409.9" data-h="897.8" style="border-radius:50px;object-position:50% 0"></video></div>
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>01</b><span>Tecnología</span></p>
+        <h2 id="t-01">Apps con <em>inteligencia artificial</em></h2>
+        <p class="lead">Asistentes que te escuchan, buscan el dato en vivo y te responden en voz alta. También actúan en el teléfono: ponen música o abren una app.</p>
+        <ul class="incluye"><li>Voz en tiempo real</li><li>Memoria de cada usuario</li><li>Hechas con Gemini y Claude</li></ul>
+        <p class="credito">En la pantalla: Hey Eva, la app real, escuchando y respondiendo. Es un producto de Global Technology &amp; Innovation AI, que Jerick cofundó. <a href="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
       </div>
     </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>4 muestras</span></p>
+      <ul style="--cols:4;--cols-m:4"><li><a class="muestra" href="assets/portafolio/eva-demo.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-poster="assets/portafolio/eva-demo-poster.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/eva-demo-poster.webp" width="283" height="640" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>Hey Eva</b> La app real en un teléfono: escucha, piensa, responde en voz alta y abre YouTube cuando se lo pides.</span></a></li><li><a class="muestra" href="assets/portafolio/eva-ios-02.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: Describe lo que ve la cámara: aquí, el pelaje de un gato."><span class="vitrina"><img src="assets/v3/miniaturas/eva-ios-02.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> Describe lo que ve la cámara: aquí, el pelaje de un gato.</span></a></li><li><a class="muestra" href="assets/portafolio/eva-ios-03.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: Pide un Uber por voz."><span class="vitrina"><img src="assets/v3/miniaturas/eva-ios-03.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> Pide un Uber por voz.</span></a></li><li><a class="muestra" href="assets/portafolio/uccontigo-uni.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/uc-contigo/" data-poster="assets/portafolio/uccontigo-uni-poster.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/uccontigo-uni-poster.webp" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>UC Contigo</b> UNI, el asistente del sitio, respondía cuánto cuesta un semestre de Ingeniería de Software. Grabado en una copia local de la versión entregada.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada invertida" id="p02" aria-labelledby="t-02">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/02-1600.webp" srcset="assets/v3/02-900.webp 900w, assets/v3/02-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Dos teléfonos sobre un escritorio de cuero y nogal; en las pantallas, Hey Eva." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>02</b><span>Tecnología</span></p>
+        <h2 id="t-02">Apps para <em>iPhone y Android</em></h2>
+        <p class="lead">Una sola app para las dos tiendas: inicio de sesión con Apple o Google, suscripciones y pagos dentro de la app.</p>
+        <ul class="incluye"><li>Diseño fiel a tu Figma</li><li>Suscripciones y compras</li><li>Publicación en las tiendas</li></ul>
+        <p class="credito">En las pantallas: Hey Eva en Android, pensando y abriendo YouTube por voz. <a href="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>5 muestras</span></p>
+      <ul style="--cols:5;--cols-m:3"><li><a class="muestra" href="assets/portafolio/eva-ios-01.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: La pantalla de inicio en iPhone."><span class="vitrina"><img src="assets/v3/miniaturas/eva-ios-01.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> La pantalla de inicio en iPhone.</span></a></li><li><a class="muestra" href="assets/portafolio/eva-android-04.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: Envía un WhatsApp por voz, en Android."><span class="vitrina"><img src="assets/v3/miniaturas/eva-android-04.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> Envía un WhatsApp por voz, en Android.</span></a></li><li><a class="muestra" href="assets/portafolio/eva-ios-05.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: Eva Anywhere: te escucha encima de cualquier app."><span class="vitrina"><img src="assets/v3/miniaturas/eva-ios-05.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> Eva Anywhere: te escucha encima de cualquier app.</span></a></li><li><a class="muestra" href="assets/portafolio/eva-ios-06.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: La conexión con tus apps favoritas."><span class="vitrina"><img src="assets/v3/miniaturas/eva-ios-06.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> La conexión con tus apps favoritas.</span></a></li><li><a class="muestra" href="assets/portafolio/eva-android-01.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/hey-eva/" data-alt="Hey Eva: La pantalla de inicio en Android."><span class="vitrina"><img src="assets/v3/miniaturas/eva-android-01.webp" width="295" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Hey Eva</b> La pantalla de inicio en Android.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada" id="p03" aria-labelledby="t-03">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/03-1600.webp" srcset="assets/v3/03-900.webp 900w, assets/v3/03-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Un portátil abierto sobre una consola de travertino; en la pantalla, el sitio de Bondi Wellness Hotel." loading="lazy" decoding="async">
+        <div class="capa" data-lado="2048" style="width:2048px;height:2048px"><video muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1" data-src="assets/portafolio/bondi-recorrido.mp4" data-quad="[[878.8, 780.5], [1507.5, 804.5], [1456.4, 1285.9], [824.6, 1225.6]]" data-w="631.9" data-h="466.2" style="border-radius:6px;object-position:0 0"></video></div>
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>03</b><span>Tecnología</span></p>
+        <h2 id="t-03">Páginas web <em>y tiendas en línea</em></h2>
+        <p class="lead">Sitios para marcas, hoteles, inmobiliarias y universidades, y tiendas que cobran en línea o reciben el pedido por WhatsApp.</p>
+        <ul class="incluye"><li>Editor para cambiar textos y fotos</li><li>Pagos con Wompi, Bold o Mercado Pago</li><li>Píxel de Meta y Google Analytics</li></ul>
+        <p class="credito">En la pantalla: el sitio de Bondi Wellness Hotel, en vivo. <a href="https://jerickcastro.pages.dev/es/trabajo/bondi-wellness-hotel/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>5 muestras</span></p>
+      <ul style="--cols:5;--cols-m:3"><li><a class="muestra" href="assets/portafolio/bondi-recorrido.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/bondi-wellness-hotel/" data-poster="assets/portafolio/bondi-recorrido-poster.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/bondi-recorrido-poster.webp" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>Bondi Wellness Hotel</b> Un sitio que se recorre como una película, en español e inglés. En vivo.</span></a></li><li><a class="muestra" href="assets/portafolio/bondi-escena-2.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/bondi-wellness-hotel/" data-alt="Bondi Wellness Hotel: La sección de bienestar: la terraza desde el aire y los tratamientos."><span class="vitrina"><img src="assets/v3/miniaturas/bondi-escena-2.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Bondi Wellness Hotel</b> La sección de bienestar: la terraza desde el aire y los tratamientos.</span></a></li><li><a class="muestra" href="assets/portafolio/toro-recorrido.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/toro-estates/" data-poster="assets/portafolio/toro-recorrido-poster.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/toro-recorrido-poster.webp" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>Toro Estates Group</b> Amanece mientras bajas: abre en Miami de noche y termina de día. Vista previa, aún sin lanzar.</span></a></li><li><a class="muestra" href="assets/portafolio/uccontigo-programas-desktop.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/uc-contigo/" data-alt="UC Contigo: El catálogo de programas de una universidad de Barranquilla, hecho por Jerick por contrato con GPS The Marketing Machine y entregado con su código y su documentación."><span class="vitrina"><img src="assets/v3/miniaturas/uccontigo-programas-desktop.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>UC Contigo</b> El catálogo de programas de una universidad de Barranquilla, hecho por Jerick por contrato con GPS The Marketing Machine y entregado con su código y su documentación.</span></a></li><li><a class="muestra" href="assets/portafolio/delamark-producto.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-alt="Delamark: Página de producto: colores, tallas, envío y medios de pago."><span class="vitrina"><img src="assets/v3/miniaturas/delamark-producto.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Delamark</b> Página de producto: colores, tallas, envío y medios de pago.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada invertida" id="p04" aria-labelledby="t-04">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/04-1600.webp" srcset="assets/v3/04-900.webp 900w, assets/v3/04-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Un teléfono sobre mármol negro junto a una gardenia en una bandeja de latón; en la pantalla, dlamark.com." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>04</b><span>Tecnología</span></p>
+        <h2 id="t-04">Venta de boletas <em>y pagos en línea</em></h2>
+        <p class="lead">Cartelera de eventos, pago en línea y boleta con código QR, con un panel para ver cada venta.</p>
+        <ul class="incluye"><li>Pagos con Wompi</li><li>Boletas con código QR</li><li>Panel de ventas</li></ul>
+        <p class="credito">En la pantalla: dlamark.com, que vende boletas de verdad desde el 22 de octubre de 2026. <a href="https://jerickcastro.pages.dev/es/trabajo/dlamark-productions/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>6 muestras</span></p>
+      <ul style="--cols:3;--cols-m:3"><li><a class="muestra" href="assets/portafolio/dlamark-home-phone.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/dlamark-productions/" data-alt="D&#x27;Lamark Productions: dlamark.com en el celular: la cartelera y el botón de compra."><span class="vitrina"><img src="assets/v3/miniaturas/dlamark-home-phone.webp" width="296" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>D&#x27;Lamark Productions</b> dlamark.com en el celular: la cartelera y el botón de compra.</span></a></li><li><a class="muestra" href="assets/portafolio/dlamark-checkout.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/dlamark-productions/" data-alt="D&#x27;Lamark Productions: El pago desde el celular, sin crear cuenta."><span class="vitrina"><img src="assets/v3/miniaturas/dlamark-checkout.webp" width="333" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>D&#x27;Lamark Productions</b> El pago desde el celular, sin crear cuenta.</span></a></li><li><a class="muestra" href="assets/portafolio/dlamark-escaner.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/dlamark-productions/" data-alt="D&#x27;Lamark Productions: El escáner de la puerta: el personal valida cada boleta con la cámara o con el código."><span class="vitrina"><img src="assets/v3/miniaturas/dlamark-escaner.webp" width="333" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>D&#x27;Lamark Productions</b> El escáner de la puerta: el personal valida cada boleta con la cámara o con el código.</span></a></li><li><a class="muestra" href="assets/portafolio/konsiente-feliz-desktop.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/konsiente/" data-alt="Konsiente: Venta de boletas para un show de comedia, sobre la hoja de cálculo que el cliente ya usaba."><span class="vitrina"><img src="assets/v3/miniaturas/konsiente-feliz-desktop.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Konsiente</b> Venta de boletas para un show de comedia, sobre la hoja de cálculo que el cliente ya usaba.</span></a></li><li><a class="muestra" href="assets/portafolio/konsiente-feliz-compra-phone.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/konsiente/" data-alt="Konsiente: La compra en el celular: cantidad y total a pagar."><span class="vitrina"><img src="assets/v3/miniaturas/konsiente-feliz-compra-phone.webp" width="296" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Konsiente</b> La compra en el celular: cantidad y total a pagar.</span></a></li><li><a class="muestra" href="assets/portafolio/konsiente-vida-desktop.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/konsiente/" data-alt="Konsiente: Registro gratis con código QR para un pódcast en vivo."><span class="vitrina"><img src="assets/v3/miniaturas/konsiente-vida-desktop.webp" width="640" height="308" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Konsiente</b> Registro gratis con código QR para un pódcast en vivo.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada" id="p05" aria-labelledby="t-05">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/05-1600.webp" srcset="assets/v3/05-900.webp 900w, assets/v3/05-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Un monitor sobre un escritorio de nogal al anochecer, junto a una lámpara de latón; en la pantalla, CAA Suite." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>05</b><span>Tecnología</span></p>
+        <h2 id="t-05">Automatización <em>y agentes de IA</em></h2>
+        <p class="lead">Agentes de IA que hacen el trabajo repetitivo de tu negocio, como responder mensajes, ordenar datos o armar reportes. Una persona aprueba antes de que algo salga.</p>
+        <ul class="incluye"><li>Agentes con Claude y Gemini</li><li>Conexión con WhatsApp y tus programas</li><li>Aprobación humana antes de enviar</li></ul>
+        <p class="credito">En la pantalla: CAA Suite, donde agentes de IA llevan cada video del guion a la publicación y una persona aprueba cada gasto. <a href="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>4 muestras</span></p>
+      <ul style="--cols:4;--cols-m:4"><li><a class="muestra" href="assets/portafolio/caa-real-produccion.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-alt="CAA Suite: Producción: dos videos esperan aprobación y nueve están terminados, cada uno con los créditos que usó."><span class="vitrina"><img src="assets/v3/miniaturas/caa-real-produccion.webp" width="640" height="314" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>CAA Suite</b> Producción: dos videos esperan aprobación y nueve están terminados, cada uno con los créditos que usó.</span></a></li><li><a class="muestra" href="assets/portafolio/caa-real-guion.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-alt="CAA Suite: El guion de un video: duración, público, promesa y los ganchos de los primeros segundos."><span class="vitrina"><img src="assets/v3/miniaturas/caa-real-guion.webp" width="640" height="314" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>CAA Suite</b> El guion de un video: duración, público, promesa y los ganchos de los primeros segundos.</span></a></li><li><a class="muestra" href="assets/portafolio/caa-real-video.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-alt="CAA Suite: El equipo de agentes pregunta antes de seguir y una persona elige la respuesta."><span class="vitrina"><img src="assets/v3/miniaturas/caa-real-video.webp" width="640" height="314" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>CAA Suite</b> El equipo de agentes pregunta antes de seguir y una persona elige la respuesta.</span></a></li><li><a class="muestra" href="assets/portafolio/caa-real-tomas.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-alt="CAA Suite: Las tomas de un video, con lo que se pidió y cuántos intentos tomó cada una."><span class="vitrina"><img src="assets/v3/miniaturas/caa-real-tomas.webp" width="640" height="314" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>CAA Suite</b> Las tomas de un video, con lo que se pidió y cuántos intentos tomó cada una.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada invertida" id="p06" aria-labelledby="t-06">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/06-1600.webp" srcset="assets/v3/06-900.webp 900w, assets/v3/06-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Una tableta en un atril de roble junto a una ventana; en la pantalla, la inscripción en línea de UC Contigo." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>06</b><span>Tecnología</span></p>
+        <h2 id="t-06">Software <em>a la medida</em></h2>
+        <p class="lead">Programas hechos para la forma en que trabaja tu empresa: inventario, ventas, contabilidad y pedidos en un mismo lugar.</p>
+        <ul class="incluye"><li>ERP y contabilidad</li><li>Conexión con tu punto de venta</li><li>Pruebas automáticas en cada entrega</li></ul>
+        <p class="credito">En la pantalla: la inscripción en línea de UC Contigo, en cuatro pasos, que Jerick desarrolló como líder técnico por contrato con GPS The Marketing Machine. También hicimos un ERP y sistema contable para una fábrica de muebles, en uso diario. <a href="https://jerickcastro.pages.dev/es/trabajo/uc-contigo/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>3 muestras</span></p>
+      <ul style="--cols:3;--cols-m:3"><li><a class="muestra" href="assets/portafolio/uccontigo-inscripcion-desktop.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/uc-contigo/" data-alt="UC Contigo: La inscripción en línea tenía cuatro pasos: datos personales, información académica, programa y adjuntos."><span class="vitrina"><img src="assets/v3/miniaturas/uccontigo-inscripcion-desktop.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>UC Contigo</b> La inscripción en línea tenía cuatro pasos: datos personales, información académica, programa y adjuntos.</span></a></li><li><a class="muestra" href="assets/portafolio/uccontigo-editor.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/uc-contigo/" data-poster="assets/portafolio/uccontigo-editor-poster.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/uccontigo-editor-poster.webp" width="640" height="283" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>UC Contigo</b> El estudio de contenido que se entregó: la página a la izquierda y el panel de edición a la derecha.</span></a></li><li><a class="muestra" href="assets/portafolio/uccontigo-programa-phone.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/uc-contigo/" data-alt="UC Contigo: La ficha de un programa en el celular, con los botones para inscribirse."><span class="vitrina"><img src="assets/v3/miniaturas/uccontigo-programa-phone.webp" width="296" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>UC Contigo</b> La ficha de un programa en el celular, con los botones para inscribirse.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada" id="p07" aria-labelledby="t-07">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/07-1600.webp" srcset="assets/v3/07-900.webp 900w, assets/v3/07-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Un teléfono sobre un soporte de travertino junto a una camiseta índigo doblada; en la pantalla, el video de Delamark." loading="lazy" decoding="async">
+        <div class="capa" data-lado="2048" style="width:2048px;height:2048px"><video muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1" data-src="assets/portafolio/delamark-hero-movil.mp4" data-quad="[[839.7, 623.8], [1206.5, 623.3], [1206.5, 1424.5], [842.0, 1424.5]]" data-w="365.7" data-h="801.0" style="border-radius:50px;object-position:50% 0"></video></div>
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>07</b><span>Marketing</span></p>
+        <h2 id="t-07">Pauta en <em>Meta Ads</em></h2>
+        <p class="lead">Campañas en Instagram y Facebook que llevan a la gente a tu WhatsApp o a tu tienda. Tú apruebas cada anuncio y el presupuesto antes de que salga.</p>
+        <ul class="incluye"><li>Campañas a WhatsApp o a tu tienda</li><li>Revisión el día 3 y el día 7</li><li>Informe en pesos y en dólares</li></ul>
+        <p class="credito">Con Delamark, nuestra marca propia: el video vertical de la tienda, la tienda en modo de prueba y el pago. Todavía no hay una campaña suya que mostrar. <a href="https://jerickcastro.pages.dev/es/trabajo/delamark/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>4 muestras</span></p>
+      <ul style="--cols:4;--cols-m:4"><li><a class="muestra" href="assets/portafolio/delamark-hero-movil.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-poster="assets/portafolio/delamark-hero-movil-poster.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/delamark-hero-movil-poster.webp" width="360" height="640" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>Delamark</b> El video vertical de la portada de la tienda en el celular.</span></a></li><li><a class="muestra" href="assets/portafolio/2026-10-15-delamark-sobremesa.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-poster="assets/portafolio/2026-10-15-delamark-sobremesa.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/2026-10-15-delamark-sobremesa.webp" width="360" height="640" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>Delamark</b> «Sobremesa», película de marca, octubre de 2026. Sin sonido.</span></a></li><li><a class="muestra" href="assets/portafolio/delamark-hero-1.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-alt="Delamark: La tienda, en modo de prueba: todavía no cobra dinero real."><span class="vitrina"><img src="assets/v3/miniaturas/delamark-hero-1.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Delamark</b> La tienda, en modo de prueba: todavía no cobra dinero real.</span></a></li><li><a class="muestra" href="assets/portafolio/delamark-checkout.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-alt="Delamark: El pago: medios aceptados y resumen del pedido."><span class="vitrina"><img src="assets/v3/miniaturas/delamark-checkout.webp" width="640" height="304" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Delamark</b> El pago: medios aceptados y resumen del pedido.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada invertida" id="p08" aria-labelledby="t-08">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/08-1600.webp" srcset="assets/v3/08-900.webp 900w, assets/v3/08-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Tres cuadros de roble con piezas para redes, colgados en una pared de cal encima de una banca de travertino." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>08</b><span>Marketing</span></p>
+        <h2 id="t-08">Contenido <em>para redes</em></h2>
+        <p class="lead">Guiones listos para grabar, reels y carruseles con su calendario del mes. Cada pieza termina con una sola invitación: escribirte.</p>
+        <ul class="incluye"><li>Guiones segundo a segundo</li><li>Calendario mensual</li><li>Carruseles e historias</li></ul>
+        <p class="credito">En los cuadros: piezas hechas con el kit de KVRA para marcas inventadas que sirven de demostración. <a href="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>7 muestras</span></p>
+      <ul style="--cols:4;--cols-m:4"><li><a class="muestra" href="assets/portafolio/kit-pieza-borra.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Portada de carrusel para «borra», un bar de vino natural en Lisboa (marca inventada)."><span class="vitrina"><img src="assets/v3/miniaturas/kit-pieza-borra.webp" width="512" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Portada de carrusel para «borra», un bar de vino natural en Lisboa (marca inventada).</span></a></li><li><a class="muestra" href="assets/portafolio/kit-pieza-ladera.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Carrusel para Ladera, tostadores de café en Medellín (marca inventada)."><span class="vitrina"><img src="assets/v3/miniaturas/kit-pieza-ladera.webp" width="512" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Carrusel para Ladera, tostadores de café en Medellín (marca inventada).</span></a></li><li><a class="muestra" href="assets/portafolio/kit-pieza-pellash.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Post para Pell &amp; Ash, un taller de cerámica en Brooklyn (marca inventada)."><span class="vitrina"><img src="assets/v3/miniaturas/kit-pieza-pellash.webp" width="512" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Post para Pell &amp; Ash, un taller de cerámica en Brooklyn (marca inventada).</span></a></li><li><a class="muestra" href="assets/portafolio/kit-pieza-desvelo.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Post para El Desvelo, una librería en Ciudad de México (marca inventada)."><span class="vitrina"><img src="assets/v3/miniaturas/kit-pieza-desvelo.webp" width="512" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Post para El Desvelo, una librería en Ciudad de México (marca inventada).</span></a></li><li><a class="muestra" href="assets/portafolio/kit-pieza-radio32.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Historia para Radio 32, un taller de bicicletas en Bogotá (marca inventada)."><span class="vitrina"><img src="assets/v3/miniaturas/kit-pieza-radio32.webp" width="360" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Historia para Radio 32, un taller de bicicletas en Bogotá (marca inventada).</span></a></li><li><a class="muestra" href="assets/portafolio/kit-pieza-tiza.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Portada de reel para Tiza, un club de fuerza (marca inventada)."><span class="vitrina"><img src="assets/v3/miniaturas/kit-pieza-tiza.webp" width="360" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Portada de reel para Tiza, un club de fuerza (marca inventada).</span></a></li><li><a class="muestra" href="assets/portafolio/caa-real-publicado.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-alt="CAA Suite: Videos terminados y listos para publicar."><span class="vitrina"><img src="assets/v3/miniaturas/caa-real-publicado.webp" width="640" height="314" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>CAA Suite</b> Videos terminados y listos para publicar.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada" id="p09" aria-labelledby="t-09">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/09-1600.webp" srcset="assets/v3/09-900.webp 900w, assets/v3/09-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Una sala de proyección con paneles de nogal y sillas de cuero; en la pantalla, Hora Dorada." loading="lazy" decoding="async">
+        <div class="capa" data-lado="2048" style="width:2048px;height:2048px"><video muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1" data-src="assets/v3/video/09-hora-dorada.mp4" data-quad="[[439.5, 504.5], [1607.5, 504.5], [1607.5, 1177.5], [439.5, 1177.5]]" data-w="1168.0" data-h="673.0" style="border-radius:2px;object-position:50% 50%"></video></div>
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>09</b><span>Marketing</span></p>
+        <h2 id="t-09">Edición de video <em>y video con IA</em></h2>
+        <p class="lead">Reels y anuncios cortados al ritmo de la música, con títulos animados, el cierre con tu logo y música original hecha para cada pieza.</p>
+        <ul class="incluye"><li>Edición de reels y anuncios</li><li>Animación de tu logo</li><li>Escenas y música hechas con IA</li></ul>
+        <p class="credito">En la pantalla: Hora Dorada, capítulo 1, «El maletín», hecho con IA. <a href="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>4 muestras</span></p>
+      <ul style="--cols:4;--cols-m:4"><li><a class="muestra" href="assets/portafolio/films-hora-dorada-cap1.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-poster="assets/portafolio/films-hora-dorada-cap1.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/films-hora-dorada-cap1.webp" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>Hora Dorada</b> Capítulo 1, «El maletín», 12 de noviembre de 2026. Con sonido.</span></a></li><li><a class="muestra" href="assets/portafolio/2026-10-26-app-patek.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-poster="assets/portafolio/2026-10-26-app-patek.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/2026-10-26-app-patek.webp" width="360" height="640" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>CAA Suite</b> Video corto producido con CAA Suite: una subasta. Octubre de 2026.</span></a></li><li><a class="muestra" href="assets/portafolio/2026-08-19-mini-ciudad.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-poster="assets/portafolio/2026-08-19-mini-ciudad.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/2026-08-19-mini-ciudad.webp" width="360" height="640" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>CAA Suite</b> Video corto producido con CAA Suite: una ciudad en miniatura. Agosto de 2026.</span></a></li><li><a class="muestra" href="assets/portafolio/2026-10-27-app-barranquilla.mp4" data-tipo="video" data-caso="https://jerickcastro.pages.dev/es/trabajo/caa-suite/" data-poster="assets/portafolio/2026-10-27-app-barranquilla.jpg"><span class="vitrina"><img src="assets/v3/miniaturas/2026-10-27-app-barranquilla.webp" width="360" height="640" alt="" loading="lazy" decoding="async"><span class="reproducir" aria-hidden="true"></span></span><span class="leyenda"><span class="oculto">Video. </span><b>CAA Suite</b> Video corto producido con CAA Suite: una pasarela. Octubre de 2026.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada invertida" id="p10" aria-labelledby="t-10">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/10-1600.webp" srcset="assets/v3/10-900.webp 900w, assets/v3/10-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Un libro sobre lino junto a muestras de tela y una regla de latón; en la portada, el manual de marca de Delamark." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>10</b><span>Marketing</span></p>
+        <h2 id="t-10">Flyers, marca <em>y fotos con IA</em></h2>
+        <p class="lead">Flyers para post e historia, logo e identidad de marca, y fotos para redes y de producto hechas con IA.</p>
+        <ul class="incluye"><li>Flyers de eventos</li><li>Logo e identidad</li><li>Fotos con IA para redes</li></ul>
+        <p class="credito">En la portada: el manual de marca de Delamark. <a href="https://jerickcastro.pages.dev/es/trabajo/delamark/" target="_blank" rel="noopener">Ver el caso<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>6 muestras</span></p>
+      <ul style="--cols:3;--cols-m:3"><li><a class="muestra" href="assets/portafolio/delamark-marca.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-alt="Delamark: Portada del manual de marca: el monograma DM y la frase «Hecha para quedarse un rato más»."><span class="vitrina"><img src="assets/v3/miniaturas/delamark-marca.webp" width="452" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Delamark</b> Portada del manual de marca: el monograma DM y la frase «Hecha para quedarse un rato más».</span></a></li><li><a class="muestra" href="assets/portafolio/delamark-tablero.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-alt="Delamark: Tablero para elegir el logo: la ruta «Sastrería» con tres propuestas."><span class="vitrina"><img src="assets/v3/miniaturas/delamark-tablero.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Delamark</b> Tablero para elegir el logo: la ruta «Sastrería» con tres propuestas.</span></a></li><li><a class="muestra" href="assets/portafolio/delamark-colores.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/delamark/" data-alt="Delamark: La colección en cuatro colores, con el precio de cada tela."><span class="vitrina"><img src="assets/v3/miniaturas/delamark-colores.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Delamark</b> La colección en cuatro colores, con el precio de cada tela.</span></a></li><li><a class="muestra" href="assets/portafolio/kit-imagen-cafe-800.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Un café de filtro junto a la ventana: foto para un post generada con IA por el kit, octubre de 2026."><span class="vitrina"><img src="assets/v3/miniaturas/kit-imagen-cafe-800.webp" width="516" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Un café de filtro junto a la ventana: foto para un post generada con IA por el kit, octubre de 2026.</span></a></li><li><a class="muestra" href="assets/portafolio/kit-imagen-torno-800.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Unas manos en un torno de cerámica: foto para un post generada con IA por el kit, octubre de 2026."><span class="vitrina"><img src="assets/v3/miniaturas/kit-imagen-torno-800.webp" width="516" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Unas manos en un torno de cerámica: foto para un post generada con IA por el kit, octubre de 2026.</span></a></li><li><a class="muestra" href="assets/portafolio/kit-imagen-copas-800.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/kvra-orquesta/" data-alt="Kit de KVRA: Cinco copas con bebidas de colores sobre mármol: foto para un post generada con IA por el kit, octubre de 2026."><span class="vitrina"><img src="assets/v3/miniaturas/kit-imagen-copas-800.webp" width="516" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>Kit de KVRA</b> Cinco copas con bebidas de colores sobre mármol: foto para un post generada con IA por el kit, octubre de 2026.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="parada" id="p11" aria-labelledby="t-11">
+    <div class="escena">
+      <figure class="ventana"><div class="ventana-in">
+        <img src="assets/v3/11-1600.webp" srcset="assets/v3/11-900.webp 900w, assets/v3/11-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 56vw" width="1600" height="1600" alt="Una tarima frente al mar al anochecer, con luces cálidas y palmeras, lista para una fiesta." loading="lazy" decoding="async">
+        
+      </div></figure>
+      <div class="texto">
+        <p class="num"><b>11</b><span>Eventos</span></p>
+        <h2 id="t-11">Producción <em>de eventos</em></h2>
+        <p class="lead">Fiestas con una historia detrás: el concepto, el guion de la noche, el minuto a minuto, el presupuesto y la venta de boletas.</p>
+        <ul class="incluye"><li>Concepto e historia</li><li>Minuto a minuto y guion del presentador</li><li>Presupuesto en pesos y dólares</li></ul>
+        <p class="credito">Imagen de ambiente hecha con IA. Las fiestas las produce D&#x27;Lamark Productions. <a href="https://dlamark.com" target="_blank" rel="noopener">Ver dlamark.com<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></p>
+      </div>
+    </div>
+    <div class="muestras">
+      <p class="muestras-titulo"><span>Del portafolio</span><span>2 muestras</span></p>
+      <ul style="--cols:2;--cols-m:2"><li><a class="muestra" href="assets/portafolio/dlamark-home-desktop.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/dlamark-productions/" data-alt="D&#x27;Lamark Productions: dlamark.com: la cartelera de eventos con su venta de boletas."><span class="vitrina"><img src="assets/v3/miniaturas/dlamark-home-desktop.webp" width="640" height="400" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>D&#x27;Lamark Productions</b> dlamark.com: la cartelera de eventos con su venta de boletas.</span></a></li><li><a class="muestra" href="assets/portafolio/dlamark-evento.webp" data-tipo="imagen" data-caso="https://jerickcastro.pages.dev/es/trabajo/dlamark-productions/" data-alt="D&#x27;Lamark Productions: La página de un evento: fecha, lugar, categorías de boleta y el pedido."><span class="vitrina"><img src="assets/v3/miniaturas/dlamark-evento.webp" width="459" height="640" alt="" loading="lazy" decoding="async"></span><span class="leyenda"><b>D&#x27;Lamark Productions</b> La página de un evento: fecha, lugar, categorías de boleta y el pedido.</span></a></li></ul>
+    </div>
+  </section>
+  <section class="fin" id="fin" aria-labelledby="t-fin">
+    <h2 id="t-fin">Hablemos</h2>
+    <p class="lead">Cuéntanos qué necesitas y te decimos por cuál servicio empezar.</p>
+    <a class="numero" href="https://wa.me/573006746770?text=Hola%2C%20vi%20los%20servicios%20de%20KVRA%20y%20quiero%20hablar." target="_blank" rel="noopener">+57 300 674 6770<span class="oculto"> por WhatsApp (se abre en otra pestaña)</span></a>
+    <div><a class="boton lleno" href="https://wa.me/573006746770?text=Hola%2C%20vi%20los%20servicios%20de%20KVRA%20y%20quiero%20hablar." target="_blank" rel="noopener">Escríbenos por WhatsApp <span aria-hidden="true">↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></div>
+    <a class="secundario" href="https://jerickcastro.pages.dev/es/" target="_blank" rel="noopener">Ver el portafolio completo<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a>
+    <footer class="pie">
+      <span>KVRA · Tecnología, marketing y eventos</span>
+      <span>Las fotos de ambiente se hicieron con inteligencia artificial. Lo que aparece en pantallas, cuadros y portadas es trabajo real del portafolio de Jerick Castro, socio de KVRA, que incluye proyectos hechos para otras empresas.</span>
+    </footer>
   </section>
 </main>
-
-<nav class="riel" aria-label="Paradas del túnel">
-  <a href="#inicio" data-ir="0">Inicio</a>
-  <span class="corte" aria-hidden="true"></span>
-  <a href="#01" data-ir="1"><span class="sr">Parada </span>01</a>
-  <a href="#02" data-ir="2"><span class="sr">Parada </span>02</a>
-  <a href="#03" data-ir="3"><span class="sr">Parada </span>03</a>
-  <a href="#04" data-ir="4"><span class="sr">Parada </span>04</a>
-  <a href="#05" data-ir="5"><span class="sr">Parada </span>05</a>
-  <a href="#06" data-ir="6"><span class="sr">Parada </span>06</a>
-  <span class="corte" aria-hidden="true"></span>
-  <a href="#07" data-ir="7"><span class="sr">Parada </span>07</a>
-  <a href="#08" data-ir="8"><span class="sr">Parada </span>08</a>
-  <a href="#09" data-ir="9"><span class="sr">Parada </span>09</a>
-  <a href="#10" data-ir="10"><span class="sr">Parada </span>10</a>
-  <span class="corte" aria-hidden="true"></span>
-  <a href="#11" data-ir="11"><span class="sr">Parada </span>11</a>
-  <span class="corte" aria-hidden="true"></span>
-  <a href="#fin" data-ir="12">Fin</a>
-</nav>
-<div class="progreso" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-<div class="controles">
-  <button class="boton" type="button" id="ant" aria-label="Anterior"><span aria-hidden="true">&uarr;</span><span class="txt" aria-hidden="true">Anterior</span></button>
-  <button class="boton" type="button" id="sig" aria-label="Siguiente"><span class="txt" aria-hidden="true">Siguiente</span><span aria-hidden="true">&darr;</span></button>
-</div>
-<p class="sr" id="anuncio" aria-live="polite"></p>
-
+<dialog class="visor" id="visor" aria-label="Trabajo del portafolio a tamaño completo">
+  <div class="visor-caja">
+    <div class="visor-arriba"><span class="visor-cuenta"></span><button type="button" class="visor-cerrar">Cerrar</button></div>
+    <div class="visor-medio"></div>
+    <div class="visor-abajo">
+      <button type="button" class="visor-ant" aria-label="Anterior">←</button>
+      <div class="visor-texto"><p class="visor-leyenda"></p><a class="visor-caso" target="_blank" rel="noopener">Ver el caso en el portafolio<span aria-hidden="true">&nbsp;↗</span><span class="oculto"> (se abre en otra pestaña)</span></a></div>
+      <button type="button" class="visor-sig" aria-label="Siguiente">→</button>
+    </div>
+  </div>
+</dialog>
+<dialog class="indice" id="indice" aria-labelledby="t-indice">
+  <div class="indice-caja">
+    <div class="indice-arriba"><p id="t-indice">Índice</p><button type="button" class="indice-cerrar">Cerrar</button></div>
+    <div class="indice-lista"><div class="indice-grupo"><p>Tecnología</p><ol><li><a href="#p01"><b>01</b> Apps con inteligencia artificial</a></li><li><a href="#p02"><b>02</b> Apps para iPhone y Android</a></li><li><a href="#p03"><b>03</b> Páginas web y tiendas en línea</a></li><li><a href="#p04"><b>04</b> Venta de boletas y pagos en línea</a></li><li><a href="#p05"><b>05</b> Automatización y agentes de IA</a></li><li><a href="#p06"><b>06</b> Software a la medida</a></li></ol></div><div class="indice-grupo"><p>Marketing</p><ol><li><a href="#p07"><b>07</b> Pauta en Meta Ads</a></li><li><a href="#p08"><b>08</b> Contenido para redes</a></li><li><a href="#p09"><b>09</b> Edición de video y video con IA</a></li><li><a href="#p10"><b>10</b> Flyers, marca y fotos con IA</a></li></ol></div><div class="indice-grupo"><p>Eventos</p><ol><li><a href="#p11"><b>11</b> Producción de eventos</a></li></ol></div></div>
+  </div>
+</dialog>
 <script>
-(() => {
+(function () {
   'use strict';
-  const raiz = document.documentElement;
-  raiz.classList.remove('sin-js');
-  raiz.classList.add('js');
+  var d = document, R = d.documentElement;
+  var quieto = R.classList.contains('quieto');
+  function $(s, e) { return (e || d).querySelector(s); }
+  function $$(s, e) { return Array.prototype.slice.call((e || d).querySelectorAll(s)); }
+  function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+  function salida(t) { return 1 - Math.pow(1 - t, 3); }
+  function entraSale(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  var vw = innerWidth, vh = innerHeight;
 
-  const $ = (s, c = document) => c.querySelector(s);
-  const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
-  const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
-  const suave = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
-  const crucero = (t, a) => {           // speed up, cruise, brake
-    const vmax = 1 / (1 - a);
-    if (t < a) return vmax * t * t / (2 * a);
-    if (t > 1 - a) { const u = 1 - t; return 1 - vmax * u * u / (2 * a); }
-    return vmax * (t - a / 2);
-  };
+  // ---------- the real video laid over a photo's screen (perspective from the screen's four corners)
+  function resolver(A, b) {
+    var n = b.length, i, j, k;
+    for (i = 0; i < n; i++) A[i] = A[i].concat([b[i]]);
+    for (j = 0; j < n; j++) {
+      var p = j;
+      for (i = j + 1; i < n; i++) if (Math.abs(A[i][j]) > Math.abs(A[p][j])) p = i;
+      var t = A[j]; A[j] = A[p]; A[p] = t;
+      for (i = 0; i < n; i++) {
+        if (i === j) continue;
+        var f = A[i][j] / A[j][j];
+        for (k = j; k <= n; k++) A[i][k] -= f * A[j][k];
+      }
+    }
+    var x = [];
+    for (i = 0; i < n; i++) x.push(A[i][n] / A[i][i]);
+    return x;
+  }
+  function matriz(w, h, q) {
+    var s = [[0, 0], [w, 0], [w, h], [0, h]], A = [], b = [];
+    for (var i = 0; i < 4; i++) {
+      var x = s[i][0], y = s[i][1], u = q[i][0], v = q[i][1];
+      A.push([x, y, 1, 0, 0, 0, -u * x, -u * y]); b.push(u);
+      A.push([0, 0, 0, x, y, 1, -v * x, -v * y]); b.push(v);
+    }
+    var m = resolver(A, b);
+    return 'matrix3d(' + [m[0], m[3], 0, m[6], m[1], m[4], 0, m[7], 0, 0, 1, 0, m[2], m[5], 0, 1].join(',') + ')';
+  }
+  var capas = $$('.capa');
+  capas.forEach(function (c) {
+    $$('video', c).forEach(function (v) {
+      var w = +v.getAttribute('data-w'), h = +v.getAttribute('data-h');
+      v.style.width = w + 'px'; v.style.height = h + 'px';
+      v.style.transform = matriz(w, h, JSON.parse(v.getAttribute('data-quad')));
+      v.addEventListener('playing', function () { v.classList.add('vivo'); });
+    });
+  });
+  function colocarCapas() {
+    capas.forEach(function (c) {
+      var caja = c.parentNode, cw = caja.clientWidth, ch = caja.clientHeight, L = +c.getAttribute('data-lado');
+      var k = Math.max(cw / L, ch / L);
+      c.style.transform = 'translate(' + ((cw - L * k) / 2) + 'px,' + ((ch - L * k) / 2) + 'px) scale(' + k + ')';
+    });
+  }
+  if (!quieto && 'IntersectionObserver' in window) {
+    var ioVideo = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var v = e.target.querySelector('.capa video');
+        if (!v) return;
+        if (e.isIntersecting) {
+          if (!v.getAttribute('src')) v.setAttribute('src', v.getAttribute('data-src'));
+          var p = v.play();
+          if (p && p.catch) p.catch(function () {});
+        } else if (!v.paused) v.pause();
+      });
+    }, { threshold: .35 });
+    capas.forEach(function (c) { ioVideo.observe(c.parentNode); });
+  }
 
-  const reducido = matchMedia('(prefers-reduced-motion: reduce)');
-  const paradas = $$('.parada');
-  const N = paradas.length;              // 13: 0 = inicio, 1..11 = servicios, 12 = fin
-  const SERVICIOS = N - 2;
-  const F = 1000;                        // focal length: a frame at this distance shows at its own size
-  const SEG = 2600;                      // corridor length between two stops
-  const DMIN = 0.13 * F;                 // closer than this a frame is behind the camera
-  const VEL_REPOSO = 9;                  // units per second while resting (the corridor breathes)
-  const ANIO0 = 2026, PASO = 7;          // time readout: stop k shows the year 2026 + 7k (decoration)
-  const ASPECTO = 1264 / 848;            // the photos' own aspect
+  // ---------- scroll: the corridor opens, each photo opens like a window
+  var barra = $('.progreso');
+  var portada = $('.portada'), fija = $('.portada-fija'), portal = $('.portal'), portalIn = $('.portal-in'), pTexto = $('.portada-texto');
+  var base = null, fw = 0, fh = 0, visibles = [], pendiente = false;
+  function medir() {
+    vw = innerWidth; vh = innerHeight;
+    if (portal) base = { x: portal.offsetLeft, y: portal.offsetTop, w: portal.offsetWidth, h: portal.offsetHeight };
+    // the corridor grows to fill its own stage (as tall as the screen with the phone's toolbar hidden), not the window
+    if (fija) { fw = fija.offsetWidth; fh = fija.offsetHeight; }
+    colocarCapas();
+    pedir();
+  }
+  function cuadro() {
+    pendiente = false;
+    var y = window.scrollY || window.pageYOffset, max = R.scrollHeight - vh;
+    if (barra) barra.style.transform = 'scaleX(' + (max > 0 ? clamp(y / max, 0, 1) : 0) + ')';
+    if (quieto) return;
+    if (portal && base && base.w) {
+      var total = portada.offsetHeight - vh, p = total > 0 ? clamp(y / total, 0, 1) : 0, e = entraSale(p);
+      var S = Math.max(fw / base.w, fh / base.h) * 1.002, sc = 1 + (S - 1) * e;
+      var dx = (fw / 2 - (base.x + base.w / 2)) * e, dy = (fh / 2 - (base.y + base.h / 2)) * e;
+      portal.style.transform = 'translate3d(' + dx.toFixed(2) + 'px,' + dy.toFixed(2) + 'px,0) scale(' + sc.toFixed(4) + ')';
+      portalIn.style.transform = 'scale(' + (1 + .3 * p).toFixed(4) + ')';
+      pTexto.style.opacity = clamp(1 - p * 2.4, 0, 1).toFixed(3);
+      pTexto.style.transform = 'translate3d(0,' + (-36 * p).toFixed(2) + 'px,0)';
+    }
+    for (var i = 0; i < visibles.length; i++) {
+      var v = visibles[i], r = v.getBoundingClientRect();
+      var q = clamp((vh - r.top) / (vh * .85), 0, 1), s = .8 + .2 * salida(q);
+      v.style.transform = 'scale(' + s.toFixed(4) + ')';
+      v.firstElementChild.style.transform = 'scale(' + ((1 / s) * (1.08 - .08 * salida(q))).toFixed(4) + ')';
+    }
+  }
+  function pedir() { if (!pendiente) { pendiente = true; requestAnimationFrame(cuadro); } }
+  if ('IntersectionObserver' in window && !quieto) {
+    var ioVentana = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var i = visibles.indexOf(e.target);
+        if (e.isIntersecting) { if (i < 0) visibles.push(e.target); }
+        else if (i >= 0) visibles.splice(i, 1);
+      });
+      pedir();
+    }, { rootMargin: '20% 0px 20% 0px' });
+    $$('.ventana').forEach(function (v) { ioVentana.observe(v); });
+  }
+  addEventListener('scroll', pedir, { passive: true });
+  var tRes = 0;
+  function reMedir() { cancelAnimationFrame(tRes); tRes = requestAnimationFrame(medir); }
+  // every resize re-measures (it is cheap); boxes that change size without a window resize (fonts, images) too
+  addEventListener('resize', reMedir);
+  if ('ResizeObserver' in window) {
+    var ro = new ResizeObserver(reMedir);
+    if (portal) ro.observe(portal);
+    if (fija) ro.observe(fija);
+    capas.forEach(function (c) { ro.observe(c.parentNode); });
+  }
+  addEventListener('load', medir);
+  if (d.fonts && d.fonts.ready) d.fonts.ready.then(medir);
+  medir();
 
-  // where to look inside each photo for its three details: [x, y, zoom] in fractions of the photo
-  const DETALLES = {
-    '01': [[0.51, 0.36, 2.8], [0.57, 0.48, 3.4], [0.86, 0.42, 2.4]],
-    '02': [[0.48, 0.30, 2.8], [0.57, 0.73, 3.0], [0.14, 0.32, 2.2]],
-    '03': [[0.63, 0.29, 2.8], [0.62, 0.66, 3.0], [0.49, 0.38, 2.6]],
-    '04': [[0.40, 0.33, 2.8], [0.58, 0.76, 3.2], [0.45, 0.17, 2.4]],
-    '05': [[0.68, 0.25, 2.8], [0.60, 0.60, 3.0], [0.88, 0.10, 2.6]],
-    '06': [[0.70, 0.42, 2.6], [0.33, 0.58, 2.8], [0.92, 0.40, 2.6]],
-    '07': [[0.55, 0.26, 2.8], [0.54, 0.80, 2.6], [0.93, 0.30, 2.4]],
-    '08': [[0.42, 0.32, 2.8], [0.62, 0.55, 3.0], [0.80, 0.55, 2.6]],
-    '09': [[0.58, 0.40, 2.6], [0.33, 0.57, 2.8], [0.30, 0.83, 2.6]],
-    '10': [[0.38, 0.33, 2.8], [0.29, 0.84, 3.0], [0.77, 0.20, 2.6]],
-    '11': [[0.53, 0.28, 2.8], [0.68, 0.53, 2.6], [0.40, 0.12, 2.6]],
-  };
+  // ---------- text and portfolio items arrive as they come into view
+  var aparecen = $$('.texto, .muestras');
+  if ('IntersectionObserver' in window && !quieto) {
+    var ioTexto = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visto'); ioTexto.unobserve(e.target); } });
+    }, { threshold: .12 });
+    aparecen.forEach(function (t) { ioTexto.observe(t); });
+  } else aparecen.forEach(function (t) { t.classList.add('visto'); });
 
-  const anuncio = $('#anuncio');
-  const enlacesRiel = $$('.riel a');
-  const segmentos = $$('.progreso i');
-  const enlacesGrupo = $$('.grupos a');
-  const btnAnt = $('#ant'), btnSig = $('#sig');
-  const lectura = { caja: $('.lectura'), anio: $('.lectura .anio'), destino: $('.lectura .destino') };
-  const galeria = $('.galeria');
-  const lienzo = $('#lineas');
-  const ctx = lienzo.getContext('2d');
-
-  let actual = 0, viaje = null, pendiente = null;
-  let cam = 0, warp = 0, tiempo = 0, llegada = -1e9;
-  let W = innerWidth, H = innerHeight, dpr = 1;
-  let fuga = { x: 0, y: 0 }, fugaBase = { x: 0, y: 0 };
-  const raton = { x: 0, y: 0 };
-  let animar = !reducido.matches;
-
-  const pad = (n) => String(n).padStart(2, '0');
-  const paradaDelHash = () => {
-    let h = location.hash;
-    try { h = decodeURIComponent(h); } catch (e) { /* a broken link: start at the beginning */ }
-    return paradas.findIndex((p) => '#' + p.id === h);
-  };
-  const rotulo = (i) => (i === 0 ? 'Inicio' : i === N - 1 ? 'Fin' : `${pad(i)} / ${SERVICIOS}`);
-
-  // ---------------------------------------------------------------- the frames
-  // Each service has its photo as the big frame at its stop and three details of it that pass
-  // beside the camera on the way there. The last stop holds all eleven as an album.
-  const marcos = [];
-  const fotos = paradas.map((p) => p.dataset.foto || null);
-
-  function crearMarco(tipo, k, j) {
-    const el = document.createElement('div');
-    el.className = 'marco ' + tipo;
-    const img = document.createElement('div');
-    img.className = 'img';
-    el.appendChild(img);
-    const m = { el, img, tipo, k, j, z: 0, x: 0, y: 0, w: 0, h: 0, visible: false, cargado: 0, listo: false, oculto: false, pedido: false };
-    if (tipo === 'mosaico') {
-      fotos.forEach((src) => { if (src) { const i = document.createElement('i'); i.dataset.src = src; img.appendChild(i); } });
+  // ---------- viewer: the real screens and videos at full size
+  var visor = $('#visor'), grupo = [], pos = 0, origen = null;
+  function pintar() {
+    var a = grupo[pos], medio = $('.visor-medio', visor);
+    medio.textContent = '';
+    if (a.getAttribute('data-tipo') === 'video') {
+      var v = d.createElement('video');
+      v.controls = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.preload = 'metadata';
+      v.poster = a.getAttribute('data-poster') || '';
+      v.src = a.getAttribute('href');
+      medio.appendChild(v);
+      if (!quieto) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
     } else {
-      const pie = document.createElement('span');
-      pie.className = 'pie mono';
-      const nombre = paradas[k].dataset.corto || '';
-      pie.innerHTML = tipo === 'heroe' ? `<b>${pad(k)}</b> · ${nombre}` : `${pad(k)}.${j + 1}`;
-      el.appendChild(pie);
-      if (tipo === 'heroe') { const s = document.createElement('i'); s.className = 'scan'; el.appendChild(s); m.scan = s; }
+      var im = d.createElement('img');
+      im.alt = a.getAttribute('data-alt') || '';
+      im.src = a.getAttribute('href');
+      medio.appendChild(im);
     }
-    return m;
+    $('.visor-leyenda', visor).innerHTML = a.querySelector('.leyenda').innerHTML;
+    $('.visor-cuenta', visor).textContent = (pos + 1) + ' / ' + grupo.length;
+    $('.visor-caso', visor).href = a.getAttribute('data-caso');
+    $('.visor-ant', visor).disabled = $('.visor-sig', visor).disabled = grupo.length < 2;
   }
-
-  // the photos start loading only once the page shows, nearest stop first, so the first screen is not kept waiting
-  function cargarFoto(m) {
-    if (m.pedido) return;
-    m.pedido = true;
-    if (m.tipo === 'mosaico') {
-      $$('i', m.img).forEach((i) => { i.style.backgroundImage = `url("${i.dataset.src}")`; });
-      m.listo = true;
-      return;
-    }
-    const src = fotos[m.k];
-    const pre = new Image();
-    pre.onload = () => {
-      m.img.style.backgroundImage = `url("${src}")`;
-      m.listo = true;
-      if (!animar) pintar(performance.now(), 0);
-    };
-    pre.src = src;
-  }
-  function cargarFotos() {
-    marcos.slice().sort((a, b) => Math.abs(a.k - actual) - Math.abs(b.k - actual)).forEach(cargarFoto);
-  }
-
-  // build from the farthest to the nearest, so nearer frames are drawn on top
-  for (let k = N - 1; k >= 1; k--) {
-    if (k === N - 1) { marcos.push(crearMarco('mosaico', k, 0)); continue; }
-    marcos.push(crearMarco('heroe', k, 0));
-    for (let j = 2; j >= 0; j--) marcos.push(crearMarco('detalle', k, j));
-  }
-  marcos.forEach((m) => galeria.appendChild(m.el));
-
-  function puntoDeFuga() {
-    if (H <= 540) return { x: W * 0.62, y: H * 0.44 };
-    if (W >= 900) return { x: W * 0.5, y: H * 0.42 };
-    return { x: W * 0.5, y: H * 0.27 };
-  }
-
-  // the big frame's place at rest, in screen pixels
-  function sitioHeroe() {
-    if (H <= 540) { const w = Math.min(W * 0.36, H * 0.6 * ASPECTO); return { cx: W * 0.78, cy: H * 0.44, w }; }
-    if (W >= 1200) { const w = Math.min(W * 0.38, H * 0.62 * ASPECTO); return { cx: W * 0.695, cy: H * 0.44, w }; }
-    if (W >= 900) { const w = Math.min(W * 0.36, H * 0.62 * ASPECTO); return { cx: W * 0.665, cy: H * 0.44, w }; }
-    const w = Math.min(W * 0.86, H * 0.3 * ASPECTO); return { cx: W * 0.5, cy: H * 0.255, w };
-  }
-
-  // on a phone held upright the photo goes above the stop's text, in the space that text leaves free
-  function sitioHeroeCelular(k, proporcion) {
-    const arriba = $('.barra').getBoundingClientRect().bottom + 18;
-    const abajo = $('.contenido', paradas[k]).getBoundingClientRect().top - 24;
-    const alto = abajo - arriba;
-    if (alto < (proporcion > 1.6 ? 96 : 72)) return null;   // no room: leave the photo out rather than cover the text
-    const w = Math.min(W * 0.86, alto * proporcion);
-    return { cx: W * 0.5, cy: arriba + alto / 2, w };
-  }
-
-  function colocar() {
-    fugaBase = puntoDeFuga();
-    const sh = sitioHeroe();
-    const ancho = W >= 900;
-    const corto = H <= 540;
-    const celular = !ancho && !corto;
-    galeria.classList.toggle('celular', celular);   // there the stop's own label sits right under the photo
-    for (const m of marcos) {
-      if (m.tipo === 'heroe' || m.tipo === 'mosaico') {
-        const proporcion = m.tipo === 'mosaico' ? 1 / 0.56 : ASPECTO;
-        const sitio = celular ? sitioHeroeCelular(m.k, proporcion) : sh;
-        // on a screen held sideways the closing album would crowd the contact buttons
-        m.oculto = !sitio || (corto && m.tipo === 'mosaico');
-        if (m.oculto) continue;
-        m.z = m.k * SEG + F;
-        m.w = sitio.w;
-        m.h = sitio.w / proporcion;
-        m.x = sitio.cx - fugaBase.x;
-        m.y = sitio.cy - fugaBase.y;
-      } else {
-        // three details around the corridor, at different depths of the way to stop k
-        const giro = m.k * 1.7 + m.j * 2.09;
-        const radioX = (ancho ? 0.43 : 0.5) * W, radioY = (ancho ? 0.34 : 0.3) * H;
-        m.z = (m.k - 1) * SEG + F * (1.45 + m.j * 0.5);
-        const forma = [[0.8, 1], [1.5, 1], [1, 1]][m.j];      // portrait, landscape, square
-        const base = (ancho ? 0.17 : 0.34) * W;
-        m.w = base * (forma[0] >= 1 ? forma[0] : 1);
-        m.h = forma[0] >= 1 ? m.w / forma[0] : base * 1.25;
-        m.x = Math.cos(giro) * radioX;
-        m.y = Math.sin(giro) * radioY;
-        const d = DETALLES[pad(m.k)][m.j];
-        const zoom = Math.max(d[2], (m.h * ASPECTO) / m.w + 0.05);
-        const iw = zoom * m.w, ih = iw / ASPECTO;
-        const px = clamp((d[0] * iw - m.w / 2) / (iw - m.w), 0, 1) * 100;
-        const py = ih > m.h ? clamp((d[1] * ih - m.h / 2) / (ih - m.h), 0, 1) * 100 : 50;
-        m.img.style.backgroundSize = `${(zoom * 100).toFixed(1)}% auto`;
-        m.img.style.backgroundPosition = `${px.toFixed(1)}% ${py.toFixed(1)}%`;
-      }
-      m.el.style.width = m.w.toFixed(1) + 'px';
-      m.el.style.height = m.h.toFixed(1) + 'px';
-    }
-  }
-
-  function moverMarcos(ahora) {
-    for (const m of marcos) {
-      const d = m.z - cam;
-      let op = suave(DMIN, 0.42 * F, d) * (1 - suave(2.3 * F, 4.4 * F, d));
-      if (m.tipo === 'detalle') op *= 0.42 + 0.4 * Math.min(1, warp * 1.6);   // quiet at rest, bright while travelling
-      m.cargado = animar ? m.cargado + ((m.listo ? 1 : 0) - m.cargado) * 0.12 : (m.listo ? 1 : 0);
-      op *= m.cargado;
-      if (m.oculto || op <= 0.004 || d <= DMIN) {
-        if (m.visible) { m.el.style.visibility = 'hidden'; m.visible = false; }
-        continue;
-      }
-      const s = F / d;
-      const x = fuga.x + m.x * s - (m.w * s) / 2;
-      const y = fuga.y + m.y * s - (m.h * s) / 2;
-      m.el.style.transform = `translate3d(${x.toFixed(1)}px,${y.toFixed(1)}px,0) scale(${s.toFixed(4)})`;
-      m.el.style.opacity = op.toFixed(3);
-      if (!m.visible) { m.el.style.visibility = 'visible'; m.visible = true; }
-    }
-  }
-
-  // ---------------------------------------------------------------- the thin lines (technical layer)
-  const rayas = Array.from({ length: 110 }, () => ({ a: Math.random() * Math.PI * 2, r: Math.random(), l: 0.04 + Math.random() * 0.12, n: Math.random() }));
-
-  function medirLienzo() {
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
-    lienzo.width = Math.round(W * dpr);
-    lienzo.height = Math.round(H * dpr);
-  }
-
-  function dibujarLineas(ahora, dt) {
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.clearRect(0, 0, W, H);
-    const fx = fuga.x, fy = fuga.y;
-    const hx = W * 0.56, hy = H * 0.5;               // the corridor's half-size at distance F
-    const paso = 520;
-    const primero = Math.ceil((cam + DMIN) / paso);
-    ctx.lineWidth = 1;
-    // corridor edges
-    ctx.strokeStyle = 'rgba(244,239,230,0.07)';
-    ctx.beginPath();
-    for (const [sx, sy] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
-      ctx.moveTo(fx + sx * hx * 8, fy + sy * hy * 8);
-      ctx.lineTo(fx + sx * hx * 0.18, fy + sy * hy * 0.18);
-    }
-    ctx.stroke();
-    // cross sections: full thin frames and corner marks, an orange one every sixth
-    for (let i = primero; i < primero + 12; i++) {
-      const d = i * paso - cam;
-      if (d > 5.5 * F) break;
-      const s = F / d;
-      const a = suave(DMIN, 0.6 * F, d) * (1 - suave(2.5 * F, 5.5 * F, d)) * (1 - warp * 0.7);
-      if (a < 0.01) continue;
-      const x0 = fx - hx * s, x1 = fx + hx * s, y0 = fy - hy * s, y1 = fy + hy * s;
-      const naranja = i % 6 === 0;
-      if (i % 2 === 0) {
-        ctx.strokeStyle = naranja ? `rgba(255,74,28,${(0.32 * a).toFixed(3)})` : `rgba(244,239,230,${(0.085 * a).toFixed(3)})`;
-        ctx.strokeRect(x0, y0, x1 - x0, y1 - y0);
-      } else {
-        const c = 14 * Math.min(1.6, s);
-        ctx.strokeStyle = `rgba(244,239,230,${(0.22 * a).toFixed(3)})`;
-        ctx.beginPath();
-        ctx.moveTo(x0, y0 + c); ctx.lineTo(x0, y0); ctx.lineTo(x0 + c, y0);
-        ctx.moveTo(x1 - c, y0); ctx.lineTo(x1, y0); ctx.lineTo(x1, y0 + c);
-        ctx.moveTo(x1, y1 - c); ctx.lineTo(x1, y1); ctx.lineTo(x1 - c, y1);
-        ctx.moveTo(x0 + c, y1); ctx.lineTo(x0, y1); ctx.lineTo(x0, y1 - c);
-        ctx.stroke();
-        // depth tick on the floor line
-        ctx.fillStyle = `rgba(244,239,230,${(0.3 * a).toFixed(3)})`;
-        ctx.fillRect(fx - 0.5, y1 - 4 * Math.min(1.6, s), 1, 8 * Math.min(1.6, s));
-      }
-    }
-    // light streaks while travelling
-    if (warp > 0.02) {
-      const R = Math.hypot(W, H) * 0.62;
-      const v = (viaje ? viaje.dir : 1);
-      ctx.lineCap = 'round';
-      for (const q of rayas) {
-        q.r += dt * warp * (0.9 + q.n) * (q.r + 0.08) * 2.2 * v;
-        if (q.r > 1.1) { q.r = 0.03 + Math.random() * 0.1; q.a = Math.random() * Math.PI * 2; }
-        if (q.r < 0.02) { q.r = 1 + Math.random() * 0.1; q.a = Math.random() * Math.PI * 2; }
-        const r0 = q.r * R, r1 = (q.r + q.l * warp * (0.4 + q.r)) * R;
-        const al = warp * 0.55 * suave(0.04, 0.25, q.r);
-        ctx.strokeStyle = q.n > 0.82 ? `rgba(255,74,28,${al.toFixed(3)})` : `rgba(244,239,230,${(al * 0.6).toFixed(3)})`;
-        ctx.lineWidth = q.n > 0.5 ? 1.5 : 1;
-        ctx.beginPath();
-        ctx.moveTo(fx + Math.cos(q.a) * r0, fy + Math.sin(q.a) * r0);
-        ctx.lineTo(fx + Math.cos(q.a) * r1, fy + Math.sin(q.a) * r1);
-        ctx.stroke();
-      }
-      ctx.lineCap = 'butt';
-      ctx.lineWidth = 1;
-    }
-    // focus marks around the stop's big frame once it has arrived
-    const m = marcos.find((q) => (q.tipo === 'heroe' || q.tipo === 'mosaico') && q.k === actual);
-    if (m && !m.oculto && !viaje) {
-      const p = suave(0, 650, ahora - llegada);
-      const d = m.z - cam, s = F / d;
-      const x0 = fuga.x + m.x * s - (m.w * s) / 2, y0 = fuga.y + m.y * s - (m.h * s) / 2;
-      const x1 = x0 + m.w * s, y1 = y0 + m.h * s;
-      const o = 14 * (1 - p), c = 22;
-      ctx.strokeStyle = `rgba(255,74,28,${(0.9 * p).toFixed(3)})`;
-      ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      ctx.moveTo(x0 - 8 - o, y0 - 8 - o + c); ctx.lineTo(x0 - 8 - o, y0 - 8 - o); ctx.lineTo(x0 - 8 - o + c, y0 - 8 - o);
-      ctx.moveTo(x1 + 8 + o - c, y0 - 8 - o); ctx.lineTo(x1 + 8 + o, y0 - 8 - o); ctx.lineTo(x1 + 8 + o, y0 - 8 - o + c);
-      ctx.moveTo(x1 + 8 + o, y1 + 8 + o - c); ctx.lineTo(x1 + 8 + o, y1 + 8 + o); ctx.lineTo(x1 + 8 + o - c, y1 + 8 + o);
-      ctx.moveTo(x0 - 8 - o + c, y1 + 8 + o); ctx.lineTo(x0 - 8 - o, y1 + 8 + o); ctx.lineTo(x0 - 8 - o, y1 + 8 + o - c);
-      ctx.stroke();
-      ctx.lineWidth = 1;
-    }
-  }
-
-  // ---------------------------------------------------------------- stops
-  const detener = (el) => el.getAnimations({ subtree: true }).forEach((a) => a.cancel());
-  const piezas = (el) => $$('.etiqueta, .titulo .l > span, .lead, .incluye li, .prueba, .contacto, .acciones, .nota', el);
-
-  function mostrarSolo(i) {
-    paradas.forEach((p, k) => {
-      const on = k === i;
-      p.classList.toggle('activa', on);
-      p.inert = !on;
-      if (on) p.removeAttribute('aria-hidden'); else p.setAttribute('aria-hidden', 'true');
+  function mover(n) { if (grupo.length > 1) { pos = (pos + n + grupo.length) % grupo.length; pintar(); } }
+  if (visor && typeof visor.showModal === 'function') {
+    d.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.muestra');
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      origen = a;
+      grupo = $$('a.muestra', a.closest('.muestras'));
+      pos = grupo.indexOf(a);
+      pintar();
+      R.classList.add('con-dialogo');
+      visor.showModal();
+      $('.visor-cerrar', visor).focus();
+    });
+    $('.visor-cerrar', visor).addEventListener('click', function () { visor.close(); });
+    $('.visor-ant', visor).addEventListener('click', function () { mover(-1); });
+    $('.visor-sig', visor).addEventListener('click', function () { mover(1); });
+    visor.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); mover(-1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); mover(1); }
+    });
+    visor.addEventListener('click', function (e) { if (e.target === visor || e.target.classList.contains('visor-medio')) visor.close(); });
+    var x0 = null;
+    // a finger on the video is moving its timeline, not asking for the next item
+    visor.addEventListener('touchstart', function (e) { x0 = e.touches.length === 1 && e.target.tagName !== 'VIDEO' ? e.touches[0].clientX : null; }, { passive: true });
+    visor.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 60) mover(dx < 0 ? 1 : -1);
+    });
+    visor.addEventListener('close', function () {
+      R.classList.remove('con-dialogo');
+      $('.visor-medio', visor).textContent = '';
+      if (origen) origen.focus({ preventScroll: true });
     });
   }
 
-  function salir(i, dir) {
-    const el = paradas[i];
-    const cs = getComputedStyle(el);
-    const desde = { opacity: cs.opacity, transform: cs.transform === 'none' ? 'translateY(0)' : cs.transform };
-    detener(el);
-    const a = el.animate([desde, { opacity: 0, transform: `translateY(${dir > 0 ? -2.2 : 2.2}rem)` }],
-      { duration: 480, easing: 'cubic-bezier(.55,0,.8,.2)', fill: 'forwards' });
-    a.onfinish = () => {
-      if (actual === i) return;
-      el.classList.remove('activa');
-      el.inert = true;
-      el.setAttribute('aria-hidden', 'true');
-      a.cancel();
-    };
-  }
-
-  function entrar(i, dir) {
-    const el = paradas[i];
-    detener(el);
-    el.inert = false;
-    el.removeAttribute('aria-hidden');
-    el.classList.add('activa');
-    el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500, easing: 'linear' });
-    piezas(el).forEach((p, k) => {
-      const linea = p.parentElement.classList.contains('l');
-      p.animate(linea
-        ? [{ transform: 'translateY(110%)' }, { transform: 'translateY(0)' }]
-        : [{ opacity: 0, transform: `translateY(${dir > 0 ? 0.9 : -0.9}rem)` }, { opacity: 1, transform: 'translateY(0)' }],
-        { duration: linea ? 950 : 700, delay: 80 + k * 55, easing: 'cubic-bezier(.2,.7,.1,1)', fill: 'backwards' });
-    });
-    enfocar(i);
-  }
-
-  // when the reader moved from inside a stop (a button or link in it), keyboard focus follows to the new title
-  let seguirFoco = false;
-  function enfocar(i) {
-    if (!seguirFoco) return;
-    seguirFoco = false;
-    $('.titulo', paradas[i]).focus({ preventScroll: true });
-  }
-
-  function barrer(i) {
-    const m = marcos.find((q) => q.tipo === 'heroe' && q.k === i);
-    if (!m || !m.scan || !animar) return;
-    m.scan.animate([
-      { transform: 'translateY(0)', opacity: 0 },
-      { transform: `translateY(${(m.h * 0.15).toFixed(0)}px)`, opacity: 1, offset: 0.12 },
-      { transform: `translateY(${(m.h * 0.92).toFixed(0)}px)`, opacity: 0.9, offset: 0.85 },
-      { transform: `translateY(${m.h.toFixed(0)}px)`, opacity: 0 },
-    ], { duration: 1100, easing: 'cubic-bezier(.45,0,.25,1)' });
-  }
-
-  function marcar(i) {
-    enlacesRiel.forEach((a) => { if (+a.dataset.ir === i) a.setAttribute('aria-current', 'step'); else a.removeAttribute('aria-current'); });
-    segmentos.forEach((s, k) => { s.classList.toggle('hecho', k + 1 < i); s.classList.toggle('aqui', k + 1 === i); });
-    const grupo = paradas[i].dataset.grupo || '';
-    enlacesGrupo.forEach((a) => a.setAttribute('aria-current', String(a.dataset.grupo === grupo)));
-    const focoAnt = document.activeElement === btnAnt, focoSig = document.activeElement === btnSig;
-    btnAnt.disabled = i === 0;
-    btnSig.disabled = i === N - 1;
-    if (focoAnt && btnAnt.disabled) btnSig.focus();
-    if (focoSig && btnSig.disabled) btnAnt.focus();
-    try { history.replaceState(null, '', '#' + paradas[i].id); } catch (e) { /* file pages may refuse */ }
-    anuncio.textContent = paradas[i].dataset.anuncio || '';
-  }
-
-  function irA(dest) {
-    dest = clamp(Math.round(dest), 0, N - 1);
-    if (paradas.some((p) => p.contains(document.activeElement))) seguirFoco = true;
-    if (viaje) { pendiente = dest; return; }
-    if (dest === actual) return;
-    const desde = actual, dir = Math.sign(dest - desde), n = Math.abs(dest - desde);
-    actual = dest;
-    marcar(dest);
-    if (!animar) {
-      cam = dest * SEG;
-      mostrarSolo(dest);
-      paradas[dest].animate([{ opacity: 0 }, { opacity: 1 }], { duration: 250 });
-      enfocar(dest);
-      llegada = performance.now();
-      pintar(performance.now(), 0);
-      return;
-    }
-    const T = Math.min(1700 + 300 * (n - 1), 3800);
-    viaje = { t0: performance.now(), T, desde, dest, dir, n, c0: cam, c1: dest * SEG, a: n === 1 ? 0.42 : 0.26, entro: false };
-    salir(desde, dir);
-    lectura.destino.textContent = '→ ' + rotulo(dest);
-    lectura.anio.textContent = String(ANIO0 + desde * PASO);
-    lectura.caja.classList.add('activa');
-    raiz.classList.add('viajando');
-    ruedaBloqueada = true;
-  }
-
-  function llegar(ahora) {
-    const v = viaje;
-    viaje = null;
-    llegada = ahora;
-    lectura.caja.classList.remove('activa');
-    raiz.classList.remove('viajando');
-    if (!v.entro) entrar(v.dest, v.dir);
-    barrer(v.dest);
-    if (performance.now() - ultimaRueda > 200) ruedaBloqueada = false;
-    if (pendiente !== null) {
-      const p = pendiente;
-      pendiente = null;
-      if (p !== actual) irA(p);
-    }
-  }
-
-  const siguiente = () => irA((viaje && pendiente !== null ? pendiente : actual) + 1);
-  const anterior = () => irA((viaje && pendiente !== null ? pendiente : actual) - 1);
-
-  // ---------------------------------------------------------------- frame loop
-  let previo = 0, raf = 0, ultimaLectura = 0, reposo = 0;
-
-  function pintar(ahora, dt) {
-    const sx = Math.sin(tiempo * 1.7) * warp * W * 0.012;
-    const sy = Math.cos(tiempo * 1.3) * warp * H * 0.012;
-    const tx = fugaBase.x + (animar ? raton.x * W * 0.018 : 0) + sx;
-    const ty = fugaBase.y + (animar ? raton.y * H * 0.018 : 0) + sy;
-    const f = animar ? Math.min(1, dt * 5) : 1;
-    fuga.x += (tx - fuga.x) * f;
-    fuga.y += (ty - fuga.y) * f;
-    moverMarcos(ahora);
-    dibujarLineas(ahora, dt);
-  }
-
-  function cuadro(ahora) {
-    raf = requestAnimationFrame(cuadro);
-    const dt = previo ? Math.min(0.05, (ahora - previo) / 1000) : 1 / 60;
-    previo = ahora;
-    tiempo += dt;
-    const antes = cam;
-    if (viaje) {
-      const t = clamp((ahora - viaje.t0) / viaje.T, 0, 1);
-      cam = viaje.c0 + (viaje.c1 - viaje.c0) * crucero(t, viaje.a);
-      reposo = 0;
-      if (!viaje.entro && t >= 0.8) { viaje.entro = true; entrar(viaje.dest, viaje.dir); }
-      if (ahora - ultimaLectura > 60) {
-        ultimaLectura = ahora;
-        const a0 = ANIO0 + viaje.desde * PASO, a1 = ANIO0 + viaje.dest * PASO;
-        lectura.anio.textContent = String(Math.round(a0 + (a1 - a0) * crucero(t, viaje.a)));
-      }
-      if (t >= 1) llegar(ahora);
-    } else {
-      // at rest the corridor drifts a few units forward and back, like breathing
-      reposo += dt;
-      cam = actual * SEG + Math.sin(reposo * 0.5) * VEL_REPOSO * 2;
-    }
-    const vel = Math.abs(cam - antes) / dt;
-    warp += (clamp(vel / 7000, 0, 1) - warp) * Math.min(1, dt * 8);
-    pintar(ahora, dt);
-  }
-
-  function arrancarBucle() {
-    if (raf || !animar || document.hidden) return;
-    previo = 0;
-    raf = requestAnimationFrame(cuadro);
-  }
-  function pararBucle() { if (raf) cancelAnimationFrame(raf); raf = 0; }
-
-  // ---------------------------------------------------------------- input
-  let ruedaBloqueada = false, ultimaRueda = 0, acumulado = 0, relojRueda = 0;
-  addEventListener('wheel', (e) => {
-    if (e.ctrlKey) return;            // pinch, or ctrl + wheel: the reader is zooming
-    e.preventDefault();
-    ultimaRueda = performance.now();
-    clearTimeout(relojRueda);
-    relojRueda = setTimeout(() => { acumulado = 0; if (!viaje) ruedaBloqueada = false; }, 180);
-    if (ruedaBloqueada || viaje) return;
-    acumulado += Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
-    if (Math.abs(acumulado) > 40) {
-      ruedaBloqueada = true;
-      if (acumulado > 0) siguiente(); else anterior();
-      acumulado = 0;
-    }
-  }, { passive: false });
-
-  let toque = null;
-  addEventListener('touchstart', (e) => {
-    if (e.touches.length !== 1) { toque = null; return; }
-    toque = { x: e.touches[0].clientX, y: e.touches[0].clientY, t: performance.now() };
-  }, { passive: true });
-  addEventListener('touchend', (e) => {
-    if (!toque) return;
-    const c = e.changedTouches[0];
-    const dx = c.clientX - toque.x, dy = c.clientY - toque.y;
-    const rapido = performance.now() - toque.t < 900;
-    toque = null;
-    if (!rapido || Math.max(Math.abs(dx), Math.abs(dy)) < 45) return;
-    if (Math.abs(dy) >= Math.abs(dx)) { if (dy < 0) siguiente(); else anterior(); }
-    else if (dx < 0) siguiente(); else anterior();
-  }, { passive: true });
-
-  addEventListener('keydown', (e) => {
-    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
-    const enControl = e.target.closest && e.target.closest('a, button, input, textarea, select');
-    switch (e.key) {
-      case 'ArrowDown': case 'ArrowRight': case 'PageDown': siguiente(); e.preventDefault(); break;
-      case 'ArrowUp': case 'ArrowLeft': case 'PageUp': anterior(); e.preventDefault(); break;
-      case 'Home': irA(0); e.preventDefault(); break;
-      case 'End': irA(N - 1); e.preventDefault(); break;
-      case ' ': if (!enControl) { if (e.shiftKey) anterior(); else siguiente(); e.preventDefault(); } break;
-    }
-  });
-
-  document.addEventListener('click', (e) => {
-    const a = e.target.closest('[data-ir]');
-    if (!a) return;
-    e.preventDefault();
-    irA(+a.dataset.ir);
-  });
-  btnSig.addEventListener('click', siguiente);
-  btnAnt.addEventListener('click', anterior);
-
-  addEventListener('hashchange', () => {
-    const i = paradaDelHash();
-    if (i >= 0 && i !== actual) irA(i);
-  });
-
-  addEventListener('pointermove', (e) => {
-    if (e.pointerType !== 'mouse') return;
-    raton.x = (e.clientX / W - 0.5) * 2;
-    raton.y = (e.clientY / H - 0.5) * 2;
-  }, { passive: true });
-
-  let pendienteMedir = false;
-  function recolocar() {
-    if (pendienteMedir) return;
-    pendienteMedir = true;
-    requestAnimationFrame(() => {
-      pendienteMedir = false;
-      W = innerWidth; H = innerHeight;
-      medirLienzo();
-      colocar();
-      if (!animar) { fuga = { ...fugaBase }; pintar(performance.now(), 0); }
+  // ---------- index
+  var indice = $('#indice'), abrir = $('.abrir-indice');
+  if (indice && abrir && typeof indice.showModal === 'function') {
+    abrir.addEventListener('click', function (e) { e.preventDefault(); R.classList.add('con-dialogo'); indice.showModal(); $('.indice-cerrar', indice).focus(); });
+    indice.addEventListener('close', function () { R.classList.remove('con-dialogo'); });
+    $('.indice-cerrar', indice).addEventListener('click', function () { indice.close(); });
+    $$('a', indice).forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        R.classList.remove('con-dialogo');
+        indice.close();
+        var destino = $(a.getAttribute('href'));
+        if (destino) {
+          destino.scrollIntoView({ behavior: quieto ? 'auto' : 'smooth', block: 'start' });
+          var t = $('h2', destino);
+          if (t) { t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); }
+        }
+      });
     });
   }
-  addEventListener('resize', recolocar);
-  // a font that arrives after the page showed changes each stop's height, and with it where the phone photo fits
-  if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', recolocar);
-
-  document.addEventListener('visibilitychange', () => { if (document.hidden) pararBucle(); else arrancarBucle(); });
-
-  reducido.addEventListener('change', () => {
-    animar = !reducido.matches;
-    if (animar) arrancarBucle();
-    else {
-      pararBucle();
-      if (viaje) { const v = viaje; viaje = null; lectura.caja.classList.remove('activa'); raiz.classList.remove('viajando'); mostrarSolo(v.dest); }
-      cam = actual * SEG; warp = 0; fuga = { ...fugaBase };
-      pintar(performance.now(), 0);
-    }
-  });
-
-  // ---------------------------------------------------------------- start
-  const inicial = paradaDelHash();
-  if (inicial > 0) actual = inicial;
-  cam = actual * SEG;
-  medirLienzo();
-  colocar();
-  fuga = { ...fugaBase };
-
-  const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
-  const hoja = document.getElementById('fuentes');
-  const hojaLista = !hoja || (hoja.sheet && hoja.media !== 'print') ? Promise.resolve()
-    : new Promise((r) => { hoja.addEventListener('load', r, { once: true }); hoja.addEventListener('error', r, { once: true }); });
-  const fuentes = hojaLista.then(() => Promise.all([
-    document.fonts.load('340 1em "Fraunces"'),
-    document.fonts.load('italic 300 1em "Fraunces"'),
-    document.fonts.load('400 1em "Geist"'),
-    document.fonts.load('400 1em "Geist Mono"'),
-  ])).catch(() => {});
-
-  Promise.race([fuentes, esperar(1200)]).then(() => {
-    colocar();            // again, now that the fonts give each stop its real height
-    mostrarSolo(-1);
-    marcar(actual);
-    raiz.classList.add('listo');
-    if (animar) arrancarBucle(); else pintar(performance.now(), 0);
-    // the text starts two frames after the gallery, so the first visible frame stays light
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      entrar(actual, 1);
-      llegada = performance.now();
-      barrer(actual);
-      cargarFotos();
-    }));
-  });
 })();
+
 </script>
 </body>
 </html>
